@@ -5,7 +5,7 @@
 from file_modify import *
 from total_frame import *
 
-def calc_pc1 (mr_path, frames):
+def calc_pc1(mr_path, frames):
 	# mr_path is the path of the movement record file
 	# frames is the total no. of frames in the video
 	

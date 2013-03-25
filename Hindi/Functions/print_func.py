@@ -10,9 +10,9 @@ def print_func(x, file_path):
 	i = 0
 	while i<len(x):
 		if len(x[i])==1 or isinstance(x[i],basestring)==True :
-			f.write(x[i].encode('utf-8')+'\n')
+			f.write(x[i].encode("UTF-8")+'\n')
 		elif len(x[i])==2:
-			f.write(x[i][0].encode('utf-8')+' '+str(x[i][1])+'\n')
+			f.write(x[i][0].encode("UTF-8")+' '+str(x[i][1])+'\n')
 		else:
 			print "Error! The output list to be printed has more than two attribute."
 			quit()
