@@ -1,0 +1,41 @@
+digraph flowchart {
+
+        size="1,1";
+
+        a [shape=rectangle];
+        b [shape=rectangle];
+        c [shape=rectangle];
+	d [shape=rectangle];
+	e [shape=rectangle];
+	f [shape=diamond];
+	g [shape=diamond];
+	h [shape=diamond];
+	i [shape=diamond];
+
+        a [label="Initial"];
+        b [label="Ignore"];
+        c [label="Store"];
+	d [label="Consonant"];
+	e [label="Vowel"];
+	f [label="Sign"];
+	g [label="Halant"];
+	h [label="Matra"];
+	i [label="Sign"];
+	
+        a -> b [label="Scans a sign, punctuation, halant"];
+        a -> c [label="Scans om or numerical digit"];
+        a -> d [label="Scans a consonant"];
+        a -> e [label="Scans a vowel"];
+        e -> f [label="Scans a sign"];
+        e -> c [label="Else"];
+	d -> g [label="Scans a halant"]
+	g -> d [label="Scans a consonant"]
+	g -> c [label="Else"]
+	d -> h [label="Scans a matra"]
+	d -> i [label="Scans a sign"]
+	h -> i [label="Scans a sign"]
+	h -> c [label="Else"]
+	i -> h [label="Scans a matra"]
+	i -> c [label="Else"]
+	f -> c
+}

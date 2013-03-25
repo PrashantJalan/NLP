@@ -1,0 +1,39 @@
+digraph flowchart {
+
+        a [shape=rectangle];
+        b [shape=rectangle];
+        c [shape=rectangle];
+	d [shape=rectangle];
+	e [shape=rectangle];
+	f [shape=rectangle];
+	g [shape=rectangle];
+	h [shape=rectangle];
+	i [shape=rectangle];
+
+        a [label="Initial"];
+        b [label="Ignore"];
+        c [label="Store"];
+	d [label="Consonant"];
+	e [label="Vowel"];
+	f [label="Sign"];
+	g [label="Halant"];
+	h [label="Matra"];
+	i [label="Sign"];
+	
+        a -> b [label="{S} U {P} U {H}"];
+        a -> c [label="{O} U {D}"];
+        a -> d [label="{C}"];
+        a -> e [label="{V}"];
+        e -> f [label="{S}"];
+        e -> c [label="Else"];
+	d -> g [label="{H}"]
+	g -> d [label="{C}"]
+	g -> c [label="Else"]
+	d -> h [label="{M}"]
+	d -> i [label="{S}"]
+	h -> i [label="{S}"]
+	h -> c [label="Else"]
+	i -> h [label="{M}"]
+	i -> c [label="Else"]
+	f -> c
+}
