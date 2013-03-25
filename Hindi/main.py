@@ -28,25 +28,37 @@ def main():
 	inp = open(file_path).readlines()
 	inp = map(file_modify, inp)
 
-	#Instantiation
+	# Instantiation
 	total_frame = calc_tf(inp, 1)
 	video_frame = 598
 	type_of_kgram = ['2','3','4','5','6']
 	
-	#Processing
-	syllables = []
+	# Processing the main file
+	
+	# Get the syllables of the main file
+	syllable = []
 	for item in inp:
 		if len(item)==3:
-			syllables = syllables + get_syll(item[2],1)
+			syllable = syllable + get_syll(item[2],1)
 
-	syllable_freq = sort_count(syllables)
+	syllable_freq = sort_count(syllable)
 	print_func(syllable_freq,'Files/syllable.txt')
 	
-	kgram = kgrams(syllables, type_of_kgram)
+	# Get the k-grams of the main file
+	kgram = kgrams(syllable, type_of_kgram)
 	
 	kgram_freq = sort_count(kgram)
 	print_func(kgram_freq,'Files/kgram.txt')
 	
+	# Get the label probabilities
+	
+	# Get the concept 1 file
+	
+	# Get the syllables of concept 1 file
+	
+	# Get the k-grams of concept 1 file
+	
+	# Get the probability of concept 1 happening 
 	pc = calc_pc1('Files/MR1.txt', video_frame)
 
 if __name__=='__main__':
