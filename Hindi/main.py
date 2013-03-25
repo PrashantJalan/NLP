@@ -34,6 +34,19 @@ def main():
 	type_of_kgram = ['2','3','4','5','6']
 	
 	#Processing
+	syllables = []
+	for item in inp:
+		if len(item)==3:
+			syllables = syllables + get_syll(item[2],1)
+
+	syllable_freq = sort_count(syllables)
+	print_func(syllable_freq,'Files/syllable.txt')
+	
+	kgram = kgrams(syllables, type_of_kgram)
+	
+	kgram_freq = sort_count(kgram)
+	print_func(kgram_freq,'Files/kgram.txt')
+	
 	pc = calc_pc1('Files/MR1.txt', video_frame)
 
 if __name__=='__main__':

@@ -63,7 +63,7 @@ def is_punctuation(x):
 
 def is_sign(x):
 	# Returns true if x is a sign
-	if x>=u'\u0900' or x<=u'\u0903':
+	if x>=u'\u0900' and x<=u'\u0903':
 		return True
 	elif x==u'\u093C':
 		return True
@@ -79,5 +79,62 @@ def get_syll(x, error_check):
 				print "Found a symbol which doesn't belong to any recognised Hindi Unicode character"
 				quit()
 	
-	
-		
+	#States - store, ignore, initial, consonant, vowel, halant
+	state = 'initial'
+	li = list(x)
+	syll = []
+
+	while True:
+		if state=='store':
+			syll.append(tmp)
+			del(tmp)
+			state = 'initial'
+		elif len(li)==0:
+			if 'tmp' in locals():
+				state = 'store'
+			else:
+				break
+		elif state=='initial':
+			tmp = li.pop(0)
+			if is_sign(tmp)==True or is_punctuation(tmp)==True or is_halant(tmp)==True:
+				state = 'ignore'
+			elif is_om(tmp)==True or is_numeral(tmp)==True:
+				state = 'store'
+			elif is_consonant(tmp)==True:
+				state = 'consonant'
+			elif is_vowel(tmp)==True:
+				state = 'vowel'
+			else:
+				state = 'ignore'
+		elif state=='ignore':
+			del(tmp)
+			state = 'initial'
+		elif state=='consonant':
+			tmp2 = li.pop(0)
+			if is_matra(tmp2)==True:
+				tmp = tmp+tmp2
+			elif is_sign(tmp2)==True:
+				tmp = tmp+tmp2
+			elif is_halant(tmp2)==True:
+				tmp = tmp+tmp2
+				state = 'halant'
+			else:
+				li.insert(0,tmp2)
+				state = 'store'
+		elif state=='vowel':
+			tmp2 = li.pop(0)
+			if is_sign(tmp2)==True:
+				tmp = tmp+tmp2
+				state = 'store'
+			else:
+				li.insert(0,tmp2)
+				state = 'store'
+		elif state=='halant':
+			tmp2 = li.pop(0)
+			if is_consonant(tmp2)==True:
+				tmp = tmp+tmp2
+				state = 'consonant'
+			else:
+				li.insert(0,tmp2)
+				state = 'store'
+	return syll
