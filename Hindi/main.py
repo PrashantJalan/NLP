@@ -17,7 +17,8 @@ from total_frame import *
 from calc_pc import *
 from syllable import *
 from kgrams import *
-
+from calc_pl import *
+from exclude_common import *
 
 def main():
 	if len(sys.argv)==1:
@@ -47,11 +48,19 @@ def main():
 	# Get the k-grams of the main file
 	kgram = kgrams(syllable, type_of_kgram)
 	
-	kgram_freq = sort_count(kgram)
-	print_func(kgram_freq,'Files/kgram.txt')
-	
+	# Throw away the common kgrams
+	kgram = exclude(kgram)
+
+	#Sort and count
+	kgram = sort_count(kgram)
+	print_func(kgram,'Files/kgram.txt')
+
+	# You may try merging the smaller ones into bigger ones here to get better results	
+
 	# Get the label probabilities
-	
+	pl = calc_pl(kgram)
+	print_func(pl,'Files/P(l).txt')
+
 	# Get the concept 1 file
 	
 	# Get the syllables of concept 1 file

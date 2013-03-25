@@ -1,6 +1,6 @@
 # corpus.txt contains the most common words in English. exclude function
 # will exclude the most common words from the narrative word database
-# Source: Wikipedia
+# Source: Hindi Corpus Analysis
 
 def exclude(x):
 	corpus = open("Files/corpus.txt").readlines()
