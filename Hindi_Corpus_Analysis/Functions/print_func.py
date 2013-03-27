@@ -18,24 +18,3 @@ def print_func(x, file_path, times):
 			quit()
 		i = i+1
 
-def print_func2(x, file_path, times):
-	f = open(file_path, 'a')
-	i = 0
-	while i<times:
-		if len(x[i])==2:
-			f.write(x[i][0].encode("UTF-8")+'\n')
-		else:
-			print "Error! The output list to be printed has more than two attribute."
-			quit()
-		i = i+1
-
-def print_func3(x, file_path, times):
-	f = open(file_path, 'w')
-	i = 0
-	while i<times:
-		if len(x[i])==2:
-			f.write(x[i][0].encode("UTF-8")+'\n')
-		else:
-			print "Error! The output list to be printed has more than two attribute."
-			quit()
-		i = i+1

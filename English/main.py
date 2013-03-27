@@ -12,6 +12,7 @@ from total_frame import *
 from calc_pc import *
 from kgrams import *
 from exclude_common import *
+from calc_pl import *
 
 
 def main():
@@ -38,10 +39,13 @@ def main():
 	db_word = exclude(db_word)
 	db_word = db_word + kgrams(db_word, type_of_kgram)
 	
-	db_freq = sort_count(db_word)
-	print_func(db_freq, 'Files/words.txt')
-
-	pc = calc_pc1('Files/MR1.txt', video_frame)
+	db_word = sort_count(db_word)
+	print_func(db_word, 'Files/words.txt')
+	
+	# Get the label probabilities of the labels in the db_word
+	pl = calc_pl(db_word)
+	print_func(pl,'Files/P(l).txt')
+	
 
 if __name__=='__main__':
 	main()
