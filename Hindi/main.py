@@ -19,6 +19,8 @@ from syllable import *
 from kgrams import *
 from calc_pl import *
 from exclude_common import *
+from merge_common import *
+
 
 def main():
 	if len(sys.argv)==1:
@@ -48,15 +50,28 @@ def main():
 	# Get the k-grams of the main file
 	kgram = kgrams(syllable, type_of_kgram)
 	
+#	kgram_temp = sort_count(kgram)
+#	print_func(kgram_temp, 'Files/kgram_without_exclusion.txt')
+	
 	# Throw away the common kgrams
 	kgram = exclude(kgram)
 
 	#Sort and count
 	kgram = sort_count(kgram)
-	print_func(kgram,'Files/kgram.txt')
+#	print_func(kgram, 'Files/kgram_without_merging.txt')
 
 	# You may try merging the smaller ones into bigger ones here to get better results	
+	kgram = merge_same(kgram)
 
+	# Ignore the kgrams having frequency 1
+	i = len(kgram)-1
+	while i>=0:
+		if kgram[i][1]==1:
+			kgram.pop(i)
+		i = i-1
+	
+	print_func(kgram,'Files/kgram.txt')	
+	
 	# Get the label probabilities
 	pl = calc_pl(kgram)
 	print_func(pl,'Files/P(l).txt')

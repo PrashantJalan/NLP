@@ -8,6 +8,7 @@ def exclude(x):
 	i = 0
 	while i<len(corpus):
 		corpus[i] = corpus[i].strip()
+		corpus[i] = corpus[i].decode("UTF-8")
 		i = i+1
 
 	i = 0
