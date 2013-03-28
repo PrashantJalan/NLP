@@ -105,10 +105,10 @@ def main():
 	c1_combine_filepath = 'Files/comb_c1/'
 	c2_combine_filepath = 'Files/comb_c2/'
 
-	concept(c1_filepath, total_frame, video_frame, db, pl)
-	concept(c2_filepath, total_frame, video_frame, db, pl)
-	concept(not_c1_filepath, total_frame, video_frame, db, pl)
-	concept(not_c2_filepath, total_frame, video_frame, db, pl)
+	concept(c1_filepath, total_frame, video_frame, kgram, db, pl)
+	concept(c2_filepath, total_frame, video_frame, kgram, db, pl)
+	concept(not_c1_filepath, total_frame, video_frame, kgram, db, pl)
+	concept(not_c2_filepath, total_frame, video_frame, kgram, db, pl)
 	combine(c1_combine_filepath, c1_filepath.replace('MR.txt',''), not_c1_filepath.replace('MR.txt',''))
 	combine(c2_combine_filepath, c2_filepath.replace('MR.txt',''), not_c2_filepath.replace('MR.txt',''))
 	

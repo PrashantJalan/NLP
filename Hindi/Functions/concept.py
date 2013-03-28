@@ -12,19 +12,22 @@ from sort_and_count import *
 from print_func import *
 from calc_pc import *
 from involvement import *
+from morphology import *
+from exclude_common import *
+from merge_common import *
 
 threshold = 0.9
 
 def mysort(x):
 	return x[-1]
 
-def concept(path, total_frame, video_frame, label, pl):
+def concept(path, total_frame, video_frame, kgram_main, label, pl):
 	
 	def_path = path.replace('MR.txt','')
 	
 	original = open('Files/file.txt').readlines()
 	original = map(file_modify2, original)
-	inp = open('Files/file.txt').readlines()
+	inp = open('Files/input.txt').readlines()
 	inp = map(file_modify2, inp)
 	
 	mr = open(path).readlines()
@@ -33,7 +36,7 @@ def concept(path, total_frame, video_frame, label, pl):
 	# Get the probability of concept 1 happening 
 	pc = calc_pc1(path, video_frame)
 
-	# Get thhe concept.txt file
+	# Get the concept.txt file
 	i = len(inp)-1
 	while i>=0:
 		flag = 0
@@ -49,6 +52,37 @@ def concept(path, total_frame, video_frame, label, pl):
 	
 	print_file(original, def_path+'concept.txt')
 	print_file(inp, def_path+'inp.txt')
+	
+	# For relative frequency
+	kgram = []
+	for item in inp:
+		if len(item)==3:
+			kgram = kgram + item[2]
+	#Remove the word inflections
+	kgram = morphology(kgram)
+	# Throw away the common kgrams
+	kgram = exclude(kgram)
+	#Sort and count
+	kgram = sort_count(kgram)
+	# You may try merging the smaller ones into bigger ones here to get better results	
+	kgram = merge_same(kgram)
+	# Ignore the kgrams having frequency 1
+	i = len(kgram)-1
+	while i>=0:
+		if kgram[i][1]==1:
+			kgram.pop(i)
+		i = i-1
+	print_func(kgram, def_path+'kgram.txt')	
+	rf = []
+	for item in kgram:
+		for it in kgram_main:
+			if item[0]==it[0] and it[1]!=0:
+				temp = float(item[1])/float(it[1])
+				rf.append([item[0],temp])
+	
+	rf.sort(key=mysort, reverse=True)
+	print_func(rf, def_path+'rf.txt')
+
 	
 	# Joint probability of the concept and the label happening together
 	jp = []

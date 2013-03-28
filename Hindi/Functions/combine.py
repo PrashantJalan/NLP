@@ -59,3 +59,19 @@ def combine(target_path, c1_path, c2_path):
 	ans.sort(key=my_sort, reverse=True)
 	print_func(ans, target_path+'mi.txt')
 	del(ans)
+	
+	rf1 = open(c1_path+'rf.txt').readlines()
+	rf1 = map(file_modify_freq, rf1)
+	rf2 = open(c2_path+'rf.txt').readlines()
+	rf2 = map(file_modify_freq, rf2)
+	ans = []
+	
+	for item in rf2:
+		for it in rf1:
+			if item[0]==it[0] and item[1]!=0 and ~(item[0]==1 and item[1]==1):
+				temp = it[1]/item[1]
+				ans.append([item[0],temp])
+	
+	ans.sort(key=my_sort, reverse=True)
+	print_func(ans, target_path+'rf.txt')
+	del(ans)
