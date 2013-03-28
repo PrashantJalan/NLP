@@ -10,13 +10,7 @@ sys.path.append('./Functions/')
 from file_modify import *
 from sort_and_count import *
 from print_func import *
-from total_frame import *
 from calc_pc import *
-from syllable import *
-from kgrams import *
-from calc_pl import *
-from exclude_common import *
-from merge_common import *
 from involvement import *
 
 threshold = 0.9
@@ -24,12 +18,14 @@ threshold = 0.9
 def mysort(x):
 	return x[-1]
 
-def concept(path, total_frame, video_frame, inp, label, pl):
+def concept(path, total_frame, video_frame, label, pl):
 	
 	def_path = path.replace('MR.txt','')
 	
 	original = open('Files/file.txt').readlines()
 	original = map(file_modify2, original)
+	inp = open('Files/file.txt').readlines()
+	inp = map(file_modify2, inp)
 	
 	mr = open(path).readlines()
 	mr = map(file_modify, mr)
@@ -52,7 +48,8 @@ def concept(path, total_frame, video_frame, inp, label, pl):
 		i = i-1
 	
 	print_file(original, def_path+'concept.txt')
-
+	print_file(inp, def_path+'inp.txt')
+	
 	# Joint probability of the concept and the label happening together
 	jp = []
 	for item in label:
@@ -83,7 +80,7 @@ def concept(path, total_frame, video_frame, inp, label, pl):
 	print_func(jp, def_path+'jp.txt')
 
 	cp.sort(key=mysort, reverse=True)
-	print_func(mi, def_path+'cp.txt')
+	print_func(cp, def_path+'cp.txt')
 
 	mi.sort(key=mysort, reverse=True)
 	print_func(mi, def_path+'mi.txt')

@@ -14,14 +14,13 @@ from file_modify import *
 from sort_and_count import *
 from print_func import *
 from total_frame import *
-from calc_pc import *
 from syllable import *
 from kgrams import *
 from calc_pl import *
 from exclude_common import *
 from merge_common import *
 from concept import *
-
+from combine import *
 
 def func_temp(x):
 	return x[0]
@@ -56,7 +55,7 @@ def main():
 			syllable = syllable + temp
 			tmp = kgrams(temp, type_of_kgram)
 			kgram = kgram + tmp
-			inp[i][2] = kgram
+			inp[i][2] = tmp
 		i = i+1
 
 	syllable = sort_count(syllable)
@@ -98,10 +97,16 @@ def main():
 	c2_filepath = 'Files/c2/MR.txt'
 	not_c1_filepath = 'Files/not_c1/MR.txt'
 	not_c2_filepath = 'Files/not_c2/MR.txt'
+	c1_combine_filepath = 'Files/comb_c1/'
+	c2_combine_filepath = 'Files/comb_c2/'
+
+	concept(c1_filepath, total_frame, video_frame, db, pl)
+	concept(c2_filepath, total_frame, video_frame, db, pl)
+	concept(not_c1_filepath, total_frame, video_frame, db, pl)
+	concept(not_c2_filepath, total_frame, video_frame, db, pl)
+	combine(c1_combine_filepath, c1_filepath.replace('MR.txt',''), not_c1_filepath.replace('MR.txt',''))
+	combine(c2_combine_filepath, c2_filepath.replace('MR.txt',''), not_c2_filepath.replace('MR.txt',''))
 	
-	concept(c1_filepath, total_frame, video_frame, inp, db, pl)
-	concept(c2_filepath, total_frame, video_frame, inp, db, pl)
-
-
+	
 if __name__=='__main__':
 	main()
