@@ -17,6 +17,7 @@ def print_func(x, file_path):
 			print "Error! The output list to be printed has more than two attribute."
 			quit()
 		i = i+1
+	f.close()
 		
 def print_file(x, file_path):
 	f = open(file_path, 'w')
@@ -28,3 +29,4 @@ def print_file(x, file_path):
 				f.write(item.encode("UTF-8")+' ')
 		f.write('\n')
 		i = i+1
+	f.close()

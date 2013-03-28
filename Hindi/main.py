@@ -20,7 +20,11 @@ from kgrams import *
 from calc_pl import *
 from exclude_common import *
 from merge_common import *
+from concept import *
 
+
+def func_temp(x):
+	return x[0]
 
 def main():
 	
@@ -44,7 +48,7 @@ def main():
 	# inp will contain the information in the format [initial frame, final frame, [labels]]
 	syllable = []
 	kgram = []
-	
+
 	i = 0
 	while i<len(inp):
 		if len(inp[i])==3:
@@ -64,14 +68,14 @@ def main():
 #	print_func(kgram_temp, 'Files/kgram_without_exclusion.txt')
 	
 	# Throw away the common kgrams
-#	kgram = exclude(kgram)
+	kgram = exclude(kgram)
 
 	#Sort and count
 	kgram = sort_count(kgram)
 #	print_func(kgram, 'Files/kgram_without_merging.txt')
 
 	# You may try merging the smaller ones into bigger ones here to get better results	
-#	kgram = merge_same(kgram)
+	kgram = merge_same(kgram)
 
 	# Ignore the kgrams having frequency 1
 	i = len(kgram)-1
@@ -86,16 +90,18 @@ def main():
 	pl = calc_pl(kgram)
 	print_func(pl,'Files/P(l).txt')
 
+	#Database of label
+	db = map(func_temp, kgram)
+	
+	# Concept association
+	c1_filepath = 'Files/c1/MR.txt'
+	c2_filepath = 'Files/c2/MR.txt'
+	not_c1_filepath = 'Files/not_c1/MR.txt'
+	not_c2_filepath = 'Files/not_c2/MR.txt'
+	
+	concept(c1_filepath, total_frame, video_frame, inp, db, pl)
+	concept(c2_filepath, total_frame, video_frame, inp, db, pl)
 
-	# Get the concept 1 file
-	
-	# Get the syllables of concept 1 file
-	
-	# Get the k-grams of concept 1 file
-	
-	# Get the probability of concept 1 happening 
-	pc = calc_pc1('Files/MR2.txt', video_frame)
-	print pc
 
 if __name__=='__main__':
 	main()

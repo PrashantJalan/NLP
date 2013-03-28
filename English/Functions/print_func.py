@@ -20,3 +20,16 @@ def print_func(x, file_path):
 			print "Error! The output list to be printed has more than two attribute."
 			quit()
 		i = i+1
+	f.close()
+		
+def print_file(x, file_path):
+	f = open(file_path, 'w')
+	i = 0
+	while i<len(x):
+		f.write(str(x[i][0])+'\t\t'+str(x[i][1])+'\t\t')
+		if len(x[i])==3:
+			for item in x[i][2]:
+				f.write(item+' ')
+		f.write('\n')
+		i = i+1
+	f.close()

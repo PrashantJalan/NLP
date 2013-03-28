@@ -13,8 +13,12 @@ from calc_pc import *
 from kgrams import *
 from exclude_common import *
 from calc_pl import *
+from concept import *
 
 
+def func_temp(x):
+	return x[0]
+	
 def main():
 	if len(sys.argv)==1:
 		file_path = 'Files/file.txt'
@@ -37,7 +41,7 @@ def main():
 				db_word.append(it)
 	
 	db_word = exclude(db_word)
-	db_word = db_word + kgrams(db_word, type_of_kgram)
+#	db_word = db_word + kgrams(db_word, type_of_kgram)
 	
 	db_word = sort_count(db_word)
 	print_func(db_word, 'Files/words.txt')
@@ -45,7 +49,17 @@ def main():
 	# Get the label probabilities of the labels in the db_word
 	pl = calc_pl(db_word)
 	print_func(pl,'Files/P(l).txt')
+
+	#Database of label
+	db = map(func_temp, db_word)
+
+	# Concept association
+	c1_filepath = 'Files/c1/MR.txt'
+	c2_filepath = 'Files/c2/MR.txt'
+	not_c1_filepath = 'Files/not_c1/MR.txt'
+	not_c2_filepath = 'Files/not_c2/MR.txt'
 	
+	concept(c1_filepath, total_frame, video_frame, inp, db, pl)	
 
 if __name__=='__main__':
 	main()
