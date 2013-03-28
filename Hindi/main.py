@@ -21,6 +21,8 @@ from exclude_common import *
 from merge_common import *
 from concept import *
 from combine import *
+from morphology import *
+
 
 def func_temp(x):
 	return x[0]
@@ -63,12 +65,15 @@ def main():
 
 	print_file(inp, 'Files/input.txt')
 	
+	#Remove the word inflections
+	kgram = morphology(kgram)
+		
 #	kgram_temp = sort_count(kgram)
 #	print_func(kgram_temp, 'Files/kgram_without_exclusion.txt')
-	
+
 	# Throw away the common kgrams
 	kgram = exclude(kgram)
-
+	
 	#Sort and count
 	kgram = sort_count(kgram)
 #	print_func(kgram, 'Files/kgram_without_merging.txt')
