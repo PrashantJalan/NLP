@@ -35,7 +35,7 @@ def concept(path, total_frame, video_frame, kgram_main, label, pl):
 	mr = map(file_modify, mr)
 	
 	# Shift the frames to account for the verbal delay
-	mr = shift_frame(mr, 10)
+#	mr = shift_frame(mr, 10)
 
 	# Get the probability of concept 1 happening 
 	pc = calc_pc1(path, video_frame)
