@@ -1,3 +1,38 @@
+72		91		which has two triangles enclosed 
+187		203		
+374		384		
+385		401		out of the rectangle 
+472		503		
+504		529		and it is exploring the bigger rectangle 
+530		561		
+562		598		and then larger rectangle 
+46		67		their tips are touching and 
+68		83		the triangles are rotating 
+165		205		it is sort of waiting for the smaller triangle to come out 
+384		409		but is very reluctant to not moving out 
+466		484		pushed the smaller triangle out 
+485		527		and the smaller triangle is roaming around the region 
+528		558		the bigger triangle seems to be happy 
+559		585		they are connected to each other 
+586		598		
+51		67		which are in a boundary 
+164		200		right now the red triangle is outside the boundary itself 
+470		510		so that it cannot re enter 
+511		573		the blue triangle is around so that it can 
+574		598		
+64		78		
+120		138		
+167		198		and the big triangle is going outside the box 
+368		404		the small triangle to go outside 
+460		480		
+481		513		and it is moving around very slowly 
+514		598		and big triangle is now interacting with the small triangle 
+318		345		
+385		411		the smaller triangle is of blue color 
+441		495		seems like the red triangle is stuck at the door 
+496		537		the blue triangle is outside 
+538		572		the red triangle is outside the door 
+573		598		and now they both are 
 470		483		now the smaller triangle is outside 
 484		534		and the bigger triangle is also outside now 
 535		543		
@@ -40,14 +75,6 @@
 539		562		both the triangle are outside the box 
 563		584		
 585		598		the bigger triangle is forcing 
-42		80		both are fighting to stay in a big box 
-367		392		so that it can win 
-393		416		
-438		491		so that it cannot enter into the big box ring basically 
-492		520		the small object tries to 
-521		560		
-561		576		both are fighting 
-577		598		
 44		75		they both are fighting to remain in a box 
 119		136		
 172		207		turn the blue object by moving outside the box 
@@ -57,3 +84,11 @@
 495		514		taunt the red object 
 515		548		and they both are now outside the box 
 549		598		and they both are fighting so that 
+42		80		both are fighting to stay in a big box 
+367		392		so that it can win 
+393		416		
+438		491		so that it cannot enter into the big box ring basically 
+492		520		the small object tries to 
+521		560		
+561		576		both are fighting 
+577		598		

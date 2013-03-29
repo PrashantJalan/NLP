@@ -1,3 +1,31 @@
+1		23		
+24		71		this structure has a bigger rectangle and a smaller rectangle 
+72		91		which has two triangles enclosed 
+230		263		
+293		340		
+562		598		and then larger rectangle 
+1		26		two triangles are in a box 
+27		45		there is an open box 
+46		67		their tips are touching and 
+68		83		the triangles are rotating 
+84		107		with respect to each other 
+559		585		they are connected to each other 
+586		598		
+1		18		
+19		50		these are basically two triangles 
+51		67		which are in a boundary 
+241		280		so that it can push the blue triangle outside the boundary 
+574		598		
+1		28		
+29		63		there are two triangles inside the box 
+64		78		
+297		343		the small triangle is refusing to move 
+1		14		
+15		68		i can see a rectangle with little two triangles 
+232		254		now it is again inside 
+318		345		
+538		572		the red triangle is outside the door 
+573		598		and now they both are 
 1		41		there are two triangles and two squares here 
 42		105		there is an inner square and an outer square 
 236		250		
@@ -40,6 +68,11 @@
 539		562		both the triangle are outside the box 
 563		584		
 585		598		the bigger triangle is forcing 
+1		43		so there is a red object and there is blue smaller object 
+44		75		they both are fighting to remain in a box 
+324		338		
+495		514		taunt the red object 
+549		598		and they both are fighting so that 
 1		16		
 17		41		there is a big object and a small object 
 42		80		both are fighting to stay in a big box 
@@ -47,8 +80,3 @@
 236		255		and comes out of the box 
 561		576		both are fighting 
 577		598		
-1		43		so there is a red object and there is blue smaller object 
-44		75		they both are fighting to remain in a box 
-324		338		
-495		514		taunt the red object 
-549		598		and they both are fighting so that 

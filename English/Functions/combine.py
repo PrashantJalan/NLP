@@ -52,7 +52,7 @@ def combine(target_path, c1_path, c2_path):
 	
 	for item in mi2:
 		for it in mi1:
-			if item[0]==it[0] and item[1]>0 and it[1]>0:
+			if item[0]==it[0] and item[1]!=0:
 				temp = it[1]/item[1]
 				ans.append([item[0],temp])
 	

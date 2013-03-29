@@ -1,3 +1,9 @@
+374		384		
+429		471		the smaller triangle seems to be trying to move on for some reason 
+357		383		and it is waiting for him to go ahead 
+466		484		pushed the smaller triangle out 
+436		459		the small triangle is now outside 
+460		480		
 438		469		
 470		483		now the smaller triangle is outside 
 413		468		the smaller triangle is outside the box and the bigger triangle is still inside the box 
@@ -12,8 +18,8 @@
 378		395		
 426		437		
 521		538		
+430		440		
+441		476		and now the blue object is trying to 
 367		392		so that it can win 
 417		437		the big object blocks the small object 
 438		491		so that it cannot enter into the big box ring basically 
-430		440		
-441		476		and now the blue object is trying to 
