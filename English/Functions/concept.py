@@ -62,7 +62,7 @@ def concept(path, total_frame, video_frame, db_main, label, pl):
 			db_word = db_word + item[2]
 
 	#Remove the word inflections
-	db_word = morphology(db_word)
+#	db_word = morphology(db_word)
 	# Throw away the common words
 	db_word = exclude(db_word)
 	#Sort and count

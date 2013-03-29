@@ -1,8 +1,5 @@
-27		45		there is an open box 
-269		275		
-12		33		there are two triangles in the box 
-23		47		we can see two triangles over here 
-362		371		
+19		50		these are basically two triangles 
+430		440		
+19		50		these are basically two triangles 
 11		27		there are two triangles 
 28		54		the bigger red one the smaller blue one 
-17		41		there is a big object and a small object 

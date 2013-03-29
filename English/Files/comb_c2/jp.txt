@@ -1,8 +1,6 @@
-small 7.41666666665
-big 5.33333333332
-box 1.30769230769
-object 1.16666666667
-red 0.0
-blue 0.0
-here 0.0
-open 0.0
+blue 9.80769230769
+smaller 4.30769230769
+red 2.03846153846
+bigger 0.5
+triangles 0.0
+basically 0.0

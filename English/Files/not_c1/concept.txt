@@ -1,23 +1,8 @@
-374		384		
-385		401		out of the rectangle 
-429		471		the smaller triangle seems to be trying to move on for some reason 
-466		484		pushed the smaller triangle out 
-120		138		
-368		404		the small triangle to go outside 
-436		459		the small triangle is now outside 
-460		480		
-438		469		
-470		483		now the smaller triangle is outside 
-535		543		
-426		456		and gone outside completely 
-457		490		and now the smaller one is roaming outside 
-429		454		he is trying to explore 
-455		495		
-121		132		they are roaming 
-438		479		the smaller triangle tries to roam around outside 
-480		493		
+441		495		seems like the red triangle is stuck at the door 
+119		136		
+430		440		
+441		476		and now the blue object is trying to 
+477		494		
 378		395		
 426		437		
 438		497		it can force the smaller one more easily 
-367		392		so that it can win 
-438		491		so that it cannot enter into the big box ring basically 
