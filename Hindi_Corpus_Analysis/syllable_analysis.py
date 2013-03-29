@@ -8,74 +8,11 @@ sys.path.append('./Functions/')
 from sort_and_count import *
 from print_func import *
 from kgrams import *
-
+from syllable import *
 
 def my_sort(x):
 	return x[-1]
 
-#We couldn't use our syllable function because that is quite slow
-def extractor(text):	
-#Func to extract syllables
-#Takes a list of characters without spaces as input
-
-	syllable=[]
-	i=0
-	while i<len(text):
-		if text[i]>=u'\u0904' and text[i]<=u'\u0914':
-			#Scan a vowel
-			syllable.append(text[i])
-			if (i+1)<len(text):
-				if text[i+1]>=u'\u0900' and text[i+1]<=u'\u0903':
-					#Scans a special sybmol
-					temp = ''.join([syllable.pop(),text[i+1]])
-					syllable.append(temp)
-					i=i+1
-			
-		elif (text[i]>=u'\u0915' and text[i]<=u'\u0939') or (text[i]>=u'\u0958' and text[i]<=u'\u095F'):
-			#Scans a consonent
-			syllable.append(text[i])
-			i=i+1
-			while i<len(text):
-				if text[i]>=u'\u0915' and text[i]<=u'\u0939':
-					#Scans a consonent
-					i=i-1	#Ignore it
-					break
-				elif (text[i]>=u'\u0958' and text[i]<=u'\u095F'):
-					#Scans a special consonent
-					i=i-1	#Ignore it
-					break
-				elif text[i]>=u'\u0904' and text[i]<=u'\u0914':
-					#Scans a vowel
-					i=i-1	#Ignore it
-					break
-				elif text[i]==u'\u094D':
-					#Scans a halant
-					temp = ''.join([syllable.pop(),text[i],text[i+1]])	#Take another character
-					syllable.append(temp)
-					i=i+2
-				elif text[i]>=u'\u0900' and text[i]<=u'\u0903':
-					#Scans a special sybmol
-					temp = ''.join([syllable.pop(),text[i]])
-					syllable.append(temp)
-					i=i+1
-				elif text[i]>=u'\u093E' and text[i]<=u'\u094C':
-					#Scans a matra
-					temp = ''.join([syllable.pop(),text[i]])
-					syllable.append(temp)
-					i=i+1
-				elif text[i]=='\n' or text[i]==' ' or text[i]==u'\x85':
-					i=i+1
-				else:
-					#Scans something else
-					i=i+1
-
-		else:
-			pass
-
-		i=i+1
-		
-	return syllable
-	
 
 def main():
 	if len(sys.argv)==1:
@@ -88,7 +25,7 @@ def main():
 	inp = list(inp)
 
 	# Get the most frequent syllables
-	syllable = extractor(inp)
+	syllable = get_syll(inp)
 	print "Computed syllables"
 
 	# Get the most frequent k-grams

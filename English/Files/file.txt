@@ -1,0 +1,184 @@
+1		23		
+24		71		this structure has a bigger rectangle and a smaller rectangle
+72		91		which has two triangles enclosed
+92		133		one side of the rectangle has a sort of an opening
+134		186		the two triangles seem to be dancing and chasing each other
+187		203		
+204		229		they seem to be rotating in funny ways
+230		263		
+264		292		seem like they are playing some sort of game
+293		340		
+341		373		so here the bigger triangle is pushing the smaller one 
+374		384		
+385		401		out of the rectangle
+402		428		
+429		471		the smaller triangle seems to be trying to move on for some reason
+472		503		
+504		529		and it is exploring the bigger rectangle
+530		561		
+562		598		and then larger rectangle
+599		619		dances around them
+1		26		two triangles are in a box
+27		45		there is an open box
+46		67		their tips are touching and 
+68		83		the triangles  are rotating
+84		107		with respect to each other
+108		164		now they are separated and the bigger triangle moves out of the box
+165		205		it is sort of waiting for the smaller triangle to come out
+206		216		but it is not coming out
+217		247		the smaller triangle seems very reluctant to come out
+248		283		it is not even letting the bigger triangle to move out of the box
+284		356		the bigger triangle now seems to be pushing the smaller triangle out of the box
+357		383		and it is waiting for him to go ahead
+384		409		but is very reluctant to not moving out
+410		465		now very forcefully the bigger triangle seems to have 
+466		484		pushed the smaller triangle out
+485		527		and the smaller triangle is roaming around the region
+528		558		the bigger triangle seems to be happy
+559		585		they are connected to each other
+586		598		
+1		28		
+29		63		there are two triangles inside the box
+64		78		
+79		119		the triangles are touching each other and rotating
+120		138		
+139		166		the smaller triangle is moving around 
+167		198		and the big triangle is going outside the box
+199		250		
+251		296		and the big triangle is trying to pull the small triangle
+297		343		the small triangle is refusing to move
+344		367		the big triangle is trying to push
+368		404		the small triangle to go outside
+405		435		
+436		459		the small triangle is now outside 
+460		480		
+481		513		and it is moving around very slowly
+514		598		and big triangle is now interacting with the small triangle
+599		619		and rotating outside
+1		41		there are two triangles and two squares here
+42		105		there is an inner square and an outer square
+106		154		the side of the inner square is cut
+155		205		the bigger triangle is out of the inner square now
+206		235		and it is coming again
+236		250		
+251		268		and out again
+269		275		
+276		347		the bigger triangle is trying to push the 
+348		389		smaller triangle out of the inner square
+390		437		and it has pushed it outside
+438		469		
+470		483		now the smaller triangle is outside
+484		534		and the bigger triangle is also outside now
+535		543		
+544		598		now their vertices have touched
+1		11		
+12		33		there are two triangles in the box
+34		65		one is small one is slightly bigger
+66		114		both of them are trying to push each other
+115		138		
+139		168		the bigger triangle is now outside the box 
+169		194		and the smaller triangle is still inside
+195		217		
+218		241		the bigger triangle now came inside 
+242		316		the smaller triangle is trying to push it outside the box
+317		373		now the bigger triangle is trying to push the smaller triangle outside the box
+374		412		
+413		468		the smaller triangle is outside the box and the bigger triangle is still inside the box
+469		519		
+520		548		both of the triangles are outside the box
+549		563		and they are playing around
+564		598		
+1		26		there are two triangles
+27		84		and both of them are trying to align themselves to their vertices
+85		123		they are in a semi closed box
+124		185		and now one of the bigger triangle has gone outside
+186		210		and it is trying to come back in
+211		231		it comes back in 
+232		267		and it attaches to another vertex
+268		324		and then it has again gone out and trying to come back in
+325		351		then it is pushing the smaller one out
+352		391		and it has pushed the smaller one out
+392		415		the smaller one has again come inside
+416		425		
+426		456		and gone outside completely 
+457		490		and now the smaller one is roaming outside
+491		526		and now the bigger one goes outside
+527		567		and they are again interacting and 
+568		590		circling around each other
+591		598		
+1		50		
+51		57		here we can see that
+58		102		two triangles one small and one big are playing in an arena
+103		130		they are confined within a space
+131		182		so now the bigger one comes out
+183		228		and he is trying to call the smaller one out
+229		251		smaller one is refusing to do so
+252		301		so finally he is trying his best
+302		349		but the smaller one does not agree 
+350		386		so he is trying to push him outside the arena
+387		428		and now the smaller one comes out
+429		454		he is trying to explore
+455		495		
+496		509		area outside the arena
+510		598		and after exploring they both started playing outside and enjoying
+1		22		
+23		47		we can see two triangles over here
+48		85		both are playing with each other inside the box
+86		95		
+96		104		now
+105		120		 
+121		132		they are roaming
+133		155		the small triangle is roaming around
+156		178		the bigger triangle goes out
+179		188		
+189		236		and tries to pull the smaller triangle outside
+237		246		
+247		292		and the still the smaller triangle is inside the box
+293		361		and he tries to push the smaller triangle outside again
+362		371		
+372		437		and he gets success in pushing him out
+438		479		the smaller triangle tries to roam around outside
+480		493		
+494		537		and get acquainted with the surroundings over there
+538		579		now both the triangles stay outside
+580		598		
+1		10		
+11		27		there are two triangles
+28		54		the bigger red one the smaller blue one
+55		61		
+62		129		the red one is making the smaller one move in specific ways
+130		154		
+155		177		now the bigger one has gone outside
+178		190		
+191		210		he is inside again
+211		250		it is trying to corner the smaller one
+251		265		
+266		298		into doing some specific things
+299		331		may be go outside the box
+332		377		it is pushing the smaller triangle outside the box
+378		395		
+396		425		and from their tips 
+426		437		
+438		497		it can force the smaller one more easily
+498		520		the smaller one is roaming outside
+521		538		
+539		562		both the triangle are outside the box
+563		584		
+585		598		the bigger triangle is forcing
+1		16		
+17		41		there is a big object and a small object
+42		80		both are fighting to stay in a big box
+81		109		which is sort of ring
+110		158		and this is a game which they are playing
+159		235		the big object moves out so that the small object follows it
+236		255		and comes out of the box
+256		315		but now basically both are fighting
+316		366		the big object is trying to move out the small object
+367		392		so that it can win
+393		416		
+417		437		the big object blocks the small object 
+438		491		so that it cannot enter into the big box ring basically
+492		520		the small object tries to 
+521		560		
+561		576		both are fighting
+577		598		
