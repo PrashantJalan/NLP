@@ -1,12 +1,9 @@
-triangles 8
+triangle 12
+small 10
+big 10
 box 8
-smaller 6
-bigger 6
 both 5
-triangle 4
-small 4
 object 4
-big 4
 trying 3
 rectangle 3
 playing 3

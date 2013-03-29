@@ -1,8 +1,7 @@
+small 8
 triangle 6
-smaller 6
 outside 6
 trying 2
-small 2
 roaming 2
 win 1
 tries 1

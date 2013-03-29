@@ -1,7 +1,5 @@
-smaller 8.0
-bigger 5.0
-small 3.99999999999
-big 2.0
-triangles 1.66666666667
+small 5.99999999999
+triangle 5.00000000001
+big 3.49999999999
 box 1.0
 object 0.5

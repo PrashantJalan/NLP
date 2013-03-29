@@ -1,12 +1,9 @@
-triangle 45
-smaller 33
+triangle 59
+small 46
+big 34
 outside 28
 box 23
-bigger 23
 trying 16
-triangles 14
-small 13
-big 11
 both 10
 object 9
 inside 8

@@ -1,12 +1,10 @@
-triangle 10
+triangle 15
+small 12
 outside 10
-smaller 8
-triangles 5
+big 7
 roaming 5
 both 5
-bigger 5
 around 5
-small 4
 rectangle 3
 playing 3
 again 3
@@ -17,7 +15,6 @@ interacting 2
 inside 2
 exploring 2
 box 2
-big 2
 arena 2
 vertices 1
 trying 1
