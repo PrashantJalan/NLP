@@ -36,7 +36,7 @@ def concept(path, total_frame, video_frame, db_main, label, pl):
 
 	# Shift the frames to account for the verbal delay
 	mr = shift_frame(mr, 10)
-
+	
 	# Get the probability of concept 1 happening 
 	pc = calc_pc1(path, video_frame)
 
@@ -62,7 +62,7 @@ def concept(path, total_frame, video_frame, db_main, label, pl):
 			db_word = db_word + item[2]
 
 	#Remove the word inflections
-#	db_word = morphology2(db_word)
+	db_word = morphology2(db_word)
 	# Throw away the common words
 	db_word = exclude(db_word)
 	#Sort and count

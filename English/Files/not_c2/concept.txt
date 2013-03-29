@@ -1,24 +1,10 @@
-1		23		
-1		26		two triangles are in a box 
-1		18		
-151		163		
-1		28		
-1		14		
-1		41		there are two triangles and two squares here 
-251		268		and out again 
+27		45		there is an open box 
+19		50		these are basically two triangles 
 269		275		
-1		11		
 12		33		there are two triangles in the box 
-1		26		there are two triangles 
-211		231		it comes back in 
-1		22		
-96		104		now 
-1		10		
+23		47		we can see two triangles over here 
+362		371		
 11		27		there are two triangles 
-251		265		
-426		437		
-1		43		so there is a red object and there is blue smaller object 
+28		54		the bigger red one the smaller blue one 
 430		440		
-1		16		
 17		41		there is a big object and a small object 
-417		437		the big object blocks the small object 

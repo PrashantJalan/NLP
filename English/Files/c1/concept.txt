@@ -1,82 +1,70 @@
-1		23		
 24		71		this structure has a bigger rectangle and a smaller rectangle 
 72		91		which has two triangles enclosed 
-230		263		
-293		340		
 562		598		and then larger rectangle 
-1		26		two triangles are in a box 
 27		45		there is an open box 
 46		67		their tips are touching and 
 68		83		the triangles are rotating 
 84		107		with respect to each other 
+206		216		but it is not coming out 
+248		283		it is not even letting the bigger triangle to move out of the box 
 559		585		they are connected to each other 
 586		598		
-1		18		
 19		50		these are basically two triangles 
 51		67		which are in a boundary 
+68		117		seems like the bigger red triangle is trying to push 
+151		163		
 241		280		so that it can push the blue triangle outside the boundary 
 574		598		
-1		28		
 29		63		there are two triangles inside the box 
 64		78		
-297		343		the small triangle is refusing to move 
-1		14		
+79		119		the triangles are touching each other and rotating 
+139		166		the smaller triangle is moving around 
 15		68		i can see a rectangle with little two triangles 
-232		254		now it is again inside 
+69		120		and right now there are two triangle inside 
+255		288		now the small triangle is trying to 
 318		345		
-538		572		the red triangle is outside the door 
 573		598		and now they both are 
-1		41		there are two triangles and two squares here 
 42		105		there is an inner square and an outer square 
 236		250		
 251		268		and out again 
 269		275		
-544		598		now their vertices have touched 
-1		11		
 12		33		there are two triangles in the box 
 34		65		one is small one is slightly bigger 
+66		114		both of them are trying to push each other 
+139		168		the bigger triangle is now outside the box 
 549		563		and they are playing around 
 564		598		
-1		26		there are two triangles 
 27		84		and both of them are trying to align themselves to their vertices 
-232		267		and it attaches to another vertex 
 325		351		then it is pushing the smaller one out 
+416		425		
 568		590		circling around each other 
 591		598		
-1		50		
 51		57		here we can see that 
 58		102		two triangles one small and one big are playing in an arena 
-229		251		smaller one is refusing to do so 
 302		349		but the smaller one does not agree 
-496		509		area outside the arena 
-1		22		
 23		47		we can see two triangles over here 
 48		85		both are playing with each other inside the box 
 86		95		
 96		104		now 
-133		155		the small triangle is roaming around 
 237		246		
-538		579		now both the triangles stay outside 
 580		598		
-1		10		
 11		27		there are two triangles 
 28		54		the bigger red one the smaller blue one 
 55		61		
-130		154		
 251		265		
-299		331		may be go outside the box 
-539		562		both the triangle are outside the box 
+498		520		the smaller one is roaming outside 
 563		584		
 585		598		the bigger triangle is forcing 
-1		43		so there is a red object and there is blue smaller object 
 44		75		they both are fighting to remain in a box 
+76		118		and they both want to remain in the box 
+137		171		the red object tries to 
+245		282		but this strategy does not work for him 
 324		338		
-495		514		taunt the red object 
 549		598		and they both are fighting so that 
-1		16		
 17		41		there is a big object and a small object 
 42		80		both are fighting to stay in a big box 
 81		109		which is sort of ring 
 236		255		and comes out of the box 
+316		366		the big object is trying to move out the small object 
 561		576		both are fighting 
 577		598		

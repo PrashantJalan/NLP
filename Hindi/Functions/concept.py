@@ -15,6 +15,7 @@ from involvement import *
 from morphology import *
 from exclude_common import *
 from merge_common import *
+from shift_frame import *
 
 threshold = 0.9
 
@@ -32,6 +33,9 @@ def concept(path, total_frame, video_frame, kgram_main, label, pl):
 	
 	mr = open(path).readlines()
 	mr = map(file_modify, mr)
+	
+	# Shift the frames to account for the verbal delay
+	mr = shift_frame(mr, 10)
 
 	# Get the probability of concept 1 happening 
 	pc = calc_pc1(path, video_frame)
