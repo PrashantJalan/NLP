@@ -41,7 +41,7 @@ def main():
 				db_word.append(it)
 	
 	#Remove the word inflections
-#	db_word = morphology(db_word)
+	db_word = morphology(db_word)
 	
 	# Throw away the common words
 	db_word = exclude(db_word)

@@ -1,6 +1,9 @@
-triangles 3
-basically 2
-smaller 1
+triangle 3
+small 2
+object 2
+box 2
+big 2
 red 1
+open 1
+here 1
 blue 1
-bigger 1
