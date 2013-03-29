@@ -1,7 +1,7 @@
-smaller 7.00000000001
-triangle 5.0
-blue 4.0
-bigger 3.49999999999
-red 2.0
-box 1.5
-object 1.0
+smaller 8.0
+bigger 5.0
+small 3.99999999999
+big 2.0
+triangles 1.66666666667
+box 1.0
+object 0.5

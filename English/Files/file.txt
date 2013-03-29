@@ -37,21 +37,6 @@
 528		558		the bigger triangle seems to be happy
 559		585		they are connected to each other
 586		598		
-1		18		
-19		50		these are basically two triangles 
-51		67		which are in a boundary
-68		117		seems like the bigger red triangle is trying to push 
-118		150		the smaller blue triangle out of the boundary
-151		163		
-164		200		right now the red triangle is outside the boundary itself
-201		240		and it is trying to do something
-241		280		so that it can push the blue triangle outside the boundary
-281		353		rather it has come behind the blue triangle 
-354		402		and it is pushing it back through the boundary
-403		469		so it is quite successful butnow it has blocked its path
-470		510		so that it cannot re enter
-511		573		the blue triangle is around so that it can
-574		598		
 1		28		
 29		63		there are two triangles inside the box
 64		78		
@@ -70,26 +55,6 @@
 481		513		and it is moving around very slowly
 514		598		and big triangle is now interacting with the small triangle
 599		619		and rotating outside
-1		14		
-15		68		i can see a rectangle with little two triangles
-69		120		and right now there are two triangle inside
-121		162		and they are attached by vertex and
-163		198		the red triangle is outside
-199		231		which is bigger and of red color
-232		254		now it is again inside
-255		288		now the small triangle is trying to
-289		317		stretch his one of the vertex
-318		345		
-346		384		red triangle is pushing the smaller triangle outside
-385		411		the smaller triangle is of blue color
-412		440		
-441		495		seems like the red triangle is stuck at the door
-496		537		the blue triangle is outside
-538		572		the red triangle is outside the door
-573		598		and now they both are
-599		616		attached by
-617		634		
-635		661		vertex and rotating 
 1		41		there are two triangles and two squares here
 42		105		there is an inner square and an outer square
 106		154		the side of the inner square is cut
@@ -200,25 +165,6 @@
 539		562		both the triangle are outside the box
 563		584		
 585		598		the bigger triangle is forcing
-1		43		so there is a red object and there is blue smaller object
-44		75		they both are fighting to remain in a box
-76		118		and they both want to remain in the box
-119		136		
-137		171		the red object tries to 
-172		207		turn the blue object by moving outside the box
-208		244		so that the blue object follows him
-245		282		but this strategy does not work for him
-283		323		so he tries to move up
-324		338		
-339		377		drag out push out the blue object
-378		429		using the virtue of his size
-430		440		
-441		476		and now the blue object is trying to 
-477		494		
-495		514		taunt the red object
-515		548		and they both are now outside the box
-549		598		and they both are fighting so that 
-599		626		the first one can go in the box
 1		16		
 17		41		there is a big object and a small object
 42		80		both are fighting to stay in a big box

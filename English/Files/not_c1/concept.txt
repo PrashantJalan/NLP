@@ -6,7 +6,6 @@
 368		404		the small triangle to go outside 
 436		459		the small triangle is now outside 
 460		480		
-441		495		seems like the red triangle is stuck at the door 
 438		469		
 470		483		now the smaller triangle is outside 
 535		543		
@@ -20,9 +19,5 @@
 378		395		
 426		437		
 438		497		it can force the smaller one more easily 
-119		136		
-430		440		
-441		476		and now the blue object is trying to 
-477		494		
 367		392		so that it can win 
 438		491		so that it cannot enter into the big box ring basically 

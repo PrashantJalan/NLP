@@ -1,10 +1,11 @@
-triangle 4
-smaller 2
+triangles 3
 object 2
 box 2
-bigger 2
+smaller 1
+small 1
 red 1
 open 1
 here 1
 blue 1
-basically 1
+bigger 1
+big 1

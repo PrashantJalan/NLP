@@ -14,19 +14,11 @@
 528		558		the bigger triangle seems to be happy 
 559		585		they are connected to each other 
 586		598		
-118		150		the smaller blue triangle out of the boundary 
-470		510		so that it cannot re enter 
-511		573		the blue triangle is around so that it can 
-574		598		
 64		78		
 120		138		
 460		480		
 481		513		and it is moving around very slowly 
 514		598		and big triangle is now interacting with the small triangle 
-385		411		the smaller triangle is of blue color 
-496		537		the blue triangle is outside 
-538		572		the red triangle is outside the door 
-573		598		and now they both are 
 470		483		now the smaller triangle is outside 
 484		534		and the bigger triangle is also outside now 
 535		543		
@@ -72,12 +64,6 @@
 539		562		both the triangle are outside the box 
 563		584		
 585		598		the bigger triangle is forcing 
-119		136		
-378		429		using the virtue of his size 
-477		494		
-495		514		taunt the red object 
-515		548		and they both are now outside the box 
-549		598		and they both are fighting so that 
 393		416		
 492		520		the small object tries to 
 521		560		
