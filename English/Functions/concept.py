@@ -15,6 +15,7 @@ from calc_pc import *
 from involvement import *
 from morphology import *
 from exclude_common import *
+from ignore import *
 
 threshold = 0.9
 
@@ -57,18 +58,13 @@ def concept(path, total_frame, video_frame, db_main, label, pl):
 			db_word = db_word + item[2]
 
 	#Remove the word inflections
-	db_word = morphology(db_word)
-	# Throw away the common kgrams
+#	db_word = morphology(db_word)
+	# Throw away the common words
 	db_word = exclude(db_word)
 	#Sort and count
 	db_word = sort_count(db_word)
-	
-	# Ignore the kgrams having frequency 1
-	i = len(db_word)-1
-	while i>=0:
-		if db_word[i][1]==1:
-			db_word.pop(i)
-		i = i-1
+	# Ignore the words having frequency 1
+#	db_word = ignore_freq(db_word, 2)
 	print_func(db_word, def_path+'words.txt')	
 	rf = []
 	for item in db_word:

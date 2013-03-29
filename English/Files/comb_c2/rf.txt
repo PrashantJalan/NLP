@@ -1,6 +1,11 @@
-is 3.0
-are 2.75
-small 2.66666666666
-big 2.5
-triangle 1.99999999999
+box 8.0
+smaller 7.0
+again 3.0
+blue 1.99999999999
+here 1.0
+back 1.0
+big 1.0
+red 1.0
 object 0.666666666666
+triangles 0.5
+small 0.5

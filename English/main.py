@@ -41,14 +41,15 @@ def main():
 				db_word.append(it)
 	
 	#Remove the word inflections
-	db_word = morphology(db_word)
+#	db_word = morphology(db_word)
 	
+	# Throw away the common words
 	db_word = exclude(db_word)
 	
 	db_word = sort_count(db_word)
 	
 	# Ignore the words having frequency 1
-	db_word = ignore_freq(db_word, 2)
+#	db_word = ignore_freq(db_word, 1)
 		
 	print_func(db_word, 'Files/words.txt')
 	
