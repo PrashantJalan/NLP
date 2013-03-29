@@ -1,5 +1,6 @@
 #This function is written for label association of a label with a given concept
 # A concept is identified by the MR.txt file
+
 import codecs
 import sys
 import collections
@@ -10,24 +11,23 @@ sys.path.append('./Functions/')
 from file_modify import *
 from sort_and_count import *
 from print_func import *
-from total_frame import *
 from calc_pc import *
-from kgrams import *
-from exclude_common import *
-from calc_pl import *
 from involvement import *
+from morphology import *
+from exclude_common import *
 
-threshold = 0.75
+threshold = 0.9
+
 
 def mysort(x):
 	return x[-1]
 
-def concept(path, total_frame, video_frame, inp, label, pl):
+def concept(path, total_frame, video_frame, db_main, label, pl):
 	
 	def_path = path.replace('MR.txt','')
 	
-	original = open('Files/file.txt').readlines()
-	original = map(file_modify, original)
+	inp = open('Files/file.txt').readlines()
+	inp = map(file_modify, inp)
 	
 	mr = open(path).readlines()
 	mr = map(file_modify, mr)
@@ -35,7 +35,7 @@ def concept(path, total_frame, video_frame, inp, label, pl):
 	# Get the probability of concept 1 happening 
 	pc = calc_pc1(path, video_frame)
 
-	# Get thhe concept.txt file
+	# Get the concept.txt file
 	i = len(inp)-1
 	while i>=0:
 		flag = 0
@@ -45,12 +45,42 @@ def concept(path, total_frame, video_frame, inp, label, pl):
 					flag = 1
 					break
 		if flag==0:
-			original.pop(i)
 			inp.pop(i)
 		i = i-1
 	
-	print_file(original, def_path+'concept.txt')
+	print_file(inp, def_path+'concept.txt')
+	
+	# For relative frequency
+	db_word = []
+	for item in inp:
+		if len(item)==3:
+			db_word = db_word + item[2]
 
+	#Remove the word inflections
+	db_word = morphology(db_word)
+	# Throw away the common kgrams
+	db_word = exclude(db_word)
+	#Sort and count
+	db_word = sort_count(db_word)
+	
+	# Ignore the kgrams having frequency 1
+	i = len(db_word)-1
+	while i>=0:
+		if db_word[i][1]==1:
+			db_word.pop(i)
+		i = i-1
+	print_func(db_word, def_path+'words.txt')	
+	rf = []
+	for item in db_word:
+		for it in db_main:
+			if item[0]==it[0] and it[1]!=0:
+				temp = float(item[1])/float(it[1])
+				rf.append([item[0],temp])
+	
+	rf.sort(key=mysort, reverse=True)
+	print_func(rf, def_path+'rf.txt')
+
+	
 	# Joint probability of the concept and the label happening together
 	jp = []
 	for item in label:
@@ -60,6 +90,13 @@ def concept(path, total_frame, video_frame, inp, label, pl):
 				if item in it[2]:
 					temp = temp + it[1] - it[0]
 		jp.append([item, temp/total_frame])
+	
+	
+	#Conditional probability
+	cp = []
+	for item in jp:
+		temp = item[1]/pc
+		cp.append([item[0],temp])
 	
 	# Mutual information
 	mi = []
@@ -72,7 +109,10 @@ def concept(path, total_frame, video_frame, inp, label, pl):
 
 	jp.sort(key=mysort, reverse=True)
 	print_func(jp, def_path+'jp.txt')
-	
+
+	cp.sort(key=mysort, reverse=True)
+	print_func(cp, def_path+'cp.txt')
+
 	mi.sort(key=mysort, reverse=True)
 	print_func(mi, def_path+'mi.txt')
 

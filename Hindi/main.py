@@ -22,7 +22,7 @@ from merge_common import *
 from concept import *
 from combine import *
 from morphology import *
-
+from ignore import *
 
 def func_temp(x):
 	return x[0]
@@ -49,7 +49,7 @@ def main():
 	# inp will contain the information in the format [initial frame, final frame, [labels]]
 	syllable = []
 	kgram = []
-
+	
 	i = 0
 	while i<len(inp):
 		if len(inp[i])==3:
@@ -82,11 +82,7 @@ def main():
 	kgram = merge_same(kgram)
 
 	# Ignore the kgrams having frequency 1
-	i = len(kgram)-1
-	while i>=0:
-		if kgram[i][1]==1:
-			kgram.pop(i)
-		i = i-1
+	kgram = ignore_freq(kgram, 1)
 	
 	print_func(kgram,'Files/kgram.txt')	
 	

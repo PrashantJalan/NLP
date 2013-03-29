@@ -1,0 +1,8 @@
+is 7
+small 6
+outside 6
+triangle 4
+trying 3
+object 3
+box 3
+big 3

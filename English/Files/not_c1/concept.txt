@@ -1,0 +1,19 @@
+438		469		
+470		483		now the smaller triangle is outside 
+413		468		the smaller triangle is outside the box and the bigger triangle is still inside the box 
+352		391		and it has pushed the smaller one out 
+416		425		
+426		456		and gone outside completely 
+457		490		and now the smaller one is roaming outside 
+350		386		so he is trying to push him outside the arena 
+429		454		he is trying to explore 
+362		371		
+438		479		the smaller triangle tries to roam around outside 
+378		395		
+426		437		
+521		538		
+367		392		so that it can win 
+417		437		the big object blocks the small object 
+438		491		so that it cannot enter into the big box ring basically 
+430		440		
+441		476		and now the blue object is trying to 

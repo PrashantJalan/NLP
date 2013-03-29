@@ -7,15 +7,12 @@
 1		11		
 12		33		there are two triangles in the box 
 34		65		one is small one is slightly bigger 
-66		114		both of them are trying to push each other 
-195		217		
 549		563		and they are playing around 
 564		598		
 1		26		there are two triangles 
 27		84		and both of them are trying to align themselves to their vertices 
 232		267		and it attaches to another vertex 
 325		351		then it is pushing the smaller one out 
-392		415		the smaller one has again come inside 
 568		590		circling around each other 
 591		598		
 1		50		
@@ -31,7 +28,6 @@
 96		104		now 
 133		155		the small triangle is roaming around 
 237		246		
-293		361		and he tries to push the smaller triangle outside again 
 538		579		now both the triangles stay outside 
 580		598		
 1		10		
@@ -41,7 +37,6 @@
 130		154		
 251		265		
 299		331		may be go outside the box 
-498		520		the smaller one is roaming outside 
 539		562		both the triangle are outside the box 
 563		584		
 585		598		the bigger triangle is forcing 
@@ -50,14 +45,10 @@
 42		80		both are fighting to stay in a big box 
 81		109		which is sort of ring 
 236		255		and comes out of the box 
-393		416		
-492		520		the small object tries to 
 561		576		both are fighting 
 577		598		
 1		43		so there is a red object and there is blue smaller object 
 44		75		they both are fighting to remain in a box 
-76		118		and they both want to remain in the box 
-245		282		but this strategy does not work for him 
 324		338		
 495		514		taunt the red object 
 549		598		and they both are fighting so that 

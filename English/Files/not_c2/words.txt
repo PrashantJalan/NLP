@@ -1,0 +1,6 @@
+object 6
+triangle 4
+are 4
+small 3
+is 3
+big 2
