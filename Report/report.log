@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.8.17)  3 APR 2013 18:25
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.8.17)  3 APR 2013 20:27
 entering extended mode
  %&-line parsing enabled.
 **report.tex
@@ -492,56 +492,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--89
 
 [2
 
-] [3]
+] <HN.png, id=146, 655.44875pt x 366.36874pt>
+File: HN.png Graphic file (type png)
+ <use HN.png>
+<EN.png, id=147, 827.09pt x 279.0425pt>
+File: EN.png Graphic file (type png)
+ <use EN.png> [3 <./HN.png (PNG copy)> <./EN.png (PNG copy)>]
 Chapter 3.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--100
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-<FSM2.pdf, id=151, 571.13374pt x 405.515pt>
-File: FSM2.pdf Graphic file (type pdf)
- <use FSM2.pdf>
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 112.
-
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 120.
 
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--113
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--113
+Underfull \hbox (badness 10000) in paragraph at lines 116--121
 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 116--121
+
+ []
 
 [4
 
-] [5 <./FSM2.pdf>]
+] <FSM.pdf, id=162, 571.13374pt x 405.515pt>
+File: FSM.pdf Graphic file (type pdf)
+ <use FSM.pdf> [5 <./FSM.pdf>]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--142
+Underfull \hbox (badness 10000) in paragraph at lines 142--156
 
  []
 
 [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 145--161
+Underfull \hbox (badness 10000) in paragraph at lines 159--175
 
  []
 
@@ -560,35 +560,36 @@ een already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.182 \end{document}
+l.196 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.182 \end{document}
+l.196 \end{document}
                     ] (./report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5799 strings out of 493857
- 80443 string characters out of 1153305
- 170223 words of memory out of 3000000
- 8954 multiletter control sequences out of 15000+50000
+ 5813 strings out of 493857
+ 80569 string characters out of 1153305
+ 170280 words of memory out of 3000000
+ 8963 multiletter control sequences out of 15000+50000
  10607 words of font info for 37 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,11n,36p,1283b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/t
-ype1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/velthuis/dvng10.pfb>
-Output written on report.pdf (14 pages, 135634 bytes).
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmsl10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pf
+b></usr/share/texmf-texlive/fonts/type1/public/velthuis/dvng10.pfb>
+Output written on report.pdf (14 pages, 254491 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 237 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 

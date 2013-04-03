@@ -91,6 +91,20 @@ The speaker were also asked not to metaphorize the objects in the video when we 
 
 Since, the audio speech recognition for Hindi is not yet very efficient and as our primary aim is learning language, we manually transcribed the audio clips into written Hindi texts. While transcribing the utterances, every two consecutive words were separated by space to maintain word boundary. The post-positions were generally treated as separate words and hence were separated from the content words they were attached to. However, the morphological variations were preserved and transcribed as it is without separating them from their roots. While transcribing small grammatical corrections were made. The care was taken to follow uniform writing style to avoid the transliteration variations. We embedded the narration with a reference to the frame number and broke it whenever then was a pause or any sound not describing a proper Hindi word (breathing sound or any other sound due to an external stimulus). If any pause was more than five frames, we made a separate row stating the frame period and entered empty text(nothing). For less than five frames we would merge the pause in the starting of the next narrative sentence as it was not possible manually to achieve an accuracy of less than five frames pause.
 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=5in]{HN.png}
+\caption{\small \sl A narration in Hindi.}
+\label{fig_FSM}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=5in]{EN.png}
+\caption{\small \sl A narration in English.}
+\label{fig_FSM}
+\end{figure}
+
 \chapter{Learning the language labels}
 This chapter describes the theoretical concepts behind the noun recognition.
 \section{Attention Model}
@@ -103,14 +117,14 @@ Linguistic segmentation refers to breaking down the utterances into smaller ling
 \\
 A unit of pronunciation having one vowel sound, with or without surrounding consonants, forming the whole or a part of a word is defined as a syllable. We have used the following FSM (Finite State Machine) to formulate an algorithm to find the syllabic units from the text assuming that we don’t know the word boundaries.\\
 \\
-\begin{figure}[h!] 
-\begin{center} 
-\includegraphics[scale=0.75]{FSM2.pdf} 
-\caption{\small \sl FSM to identify the syllables.} 
-\end{center} 
-\end{figure}  
-In the FSM, \{C\}, \{V\}, \{M\}, \{O\}, \{P\}, \{S\}, \{H\}, \{D\} denotes the set of all consonants ({\dn ka}, {\dn kha}, {\dn ga},...), vowels ({\dn a}, {\dn aa}, {\dn i}, {\dn ii}, ...), matras ({\dn kaa}, {\dn kii}, ...), accompanying consonants in Hindi, the character {\dn .o}, punctuation marks ({\dn |}, {\dn ||}, ...), signs ( {\dn .m}, {\dn .h}, {\dn /}, ...), halant and the digits in the Hindi language respectively. 
+In the FSM, \{C\}, \{V\}, \{M\}, \{O\}, \{P\}, \{S\}, \{H\}, \{D\} denotes the set of all consonants ({\dn ka}, {\dn kha}, {\dn ga},...), vowels ({\dn a}, {\dn aa}, {\dn i}, {\dn ii}, ...), matras ({\dn kaa}, {\dn kii}, ...), accompanying consonants in Hindi, the character {\dn .o}, punctuation marks ({\dn |}, {\dn ||}, ...), signs ( {\dn .m}, {\dn .h}, {\dn /}, ...), halant and the digits in the Hindi language respectively. The program starts from the $initial$ state. In the $store$ state whatever has been pulled out from the text list is stored as a syllable and in the $ignore$ state it is ignored. From the $initial$ state the machine goes to the $ignore$, $store$, $consonant$ or $vowel$ state depending on what it scans out of the list of text. Similarly, it proceeds forwards from the $consonant$ and $vowel$ state.
 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=5in]{FSM.pdf}
+\caption{\small \sl FSM to identify the syllables.}
+\label{fig_FSM}
+\end{figure}
 
 
 \section{Association Measure}
