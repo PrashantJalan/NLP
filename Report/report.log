@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.8.17)  30 MAR 2013 17:53
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.8.17)  3 APR 2013 14:05
 entering extended mode
  %&-line parsing enabled.
-**report.tex
+**report
 (./report.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
@@ -12,94 +12,62 @@ skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
 orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
 , estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
 rtuguese, spanish, galician, catalan, swedish, ukenglish, loaded.
-(./IEEEtran.cls
-Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
-istensen
--- Based on V1.7a by Michael Shell
--- See the "IEEEtran_HOWTO" manual for usage information.
--- http://www.michaelshell.org/tex/ieeetran/
-\@IEEEtrantmpdimenA=\dimen102
-\@IEEEtrantmpdimenB=\dimen103
-\@IEEEtrantmpcountA=\count79
-\@IEEEtrantmpcountB=\count80
-\@IEEEtrantmptoksA=\toks14
--- Using IEEE Computer Society mode.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 373.
-
-(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ppl.fd
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
--- Using 8.5in x 11in (letter) paper.
--- Using PDF output.
-\@IEEEnormalsizeunitybaselineskip=\dimen104
--- This is a 10 point document.
-\CLASSINFOnormalsizebaselineskip=\dimen105
-\CLASSINFOnormalsizeunitybaselineskip=\dimen106
-\IEEEnormaljot=\dimen107
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <5> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <7> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <8> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <11> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <17> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
-\IEEEilabelindentA=\dimen108
-\IEEEilabelindentB=\dimen109
-\IEEEilabelindent=\dimen110
-\IEEEelabelindent=\dimen111
-\IEEEdlabelindent=\dimen112
-\IEEElabelindent=\dimen113
-\IEEEiednormlabelsep=\dimen114
-\IEEEiedmathlabelsep=\dimen115
-\IEEEiedtopsep=\skip41
+\c@part=\count79
+\c@chapter=\count80
 \c@section=\count81
 \c@subsection=\count82
 \c@subsubsection=\count83
 \c@paragraph=\count84
-\c@IEEEsubequation=\count85
-\abovecaptionskip=\skip42
-\belowcaptionskip=\skip43
+\c@subparagraph=\count85
 \c@figure=\count86
 \c@table=\count87
-\@IEEEeqnnumcols=\count88
-\@IEEEeqncolcnt=\count89
-\@IEEEtmpitemindent=\dimen116
-\c@IEEEbiography=\count90
-\@IEEEtranrubishbin=\box26
-) (/usr/share/texmf-texlive/tex/latex/cite/cite.sty
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@dimlist=\toks15
+)
+
+! LaTeX Error: File `fontspec.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Interruption.
+<to be read again> 
+                   }
+l.19 \usepackage
+                {cite}^^M
+? 
+(/usr/share/texmf-texlive/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 285.
 LaTeX Info: Redefining \nocite on input line 356.
 Package: cite 2009/08/29  v 5.2
@@ -107,10 +75,6 @@ Package: cite 2009/08/29  v 5.2
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks15
-)
 (/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
@@ -125,12 +89,12 @@ Package graphics Info: Driver file: dvips.def on input line 91.
 (/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-\Gin@req@height=\dimen117
-\Gin@req@width=\dimen118
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
 )
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip44
+\@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
@@ -139,11 +103,11 @@ Package: amstext 2000/06/29 v2.01
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
-\ex@=\dimen119
+\ex@=\dimen109
 ))
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen120
+\pmbraise@=\dimen110
 )
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -158,9 +122,9 @@ LaTeX Info: Redefining \overline on input line 307.
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
-\big@size=\dimen121
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen111
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count96
@@ -173,26 +137,26 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \column@=\count101
 \maxfields@=\count102
 \andhelp@=\toks18
-\eqnshift@=\dimen122
-\alignsep@=\dimen123
-\tagshift@=\dimen124
-\tagwidth@=\dimen125
-\totwidth@=\dimen126
-\lineht@=\dimen127
+\eqnshift@=\dimen112
+\alignsep@=\dimen113
+\tagshift@=\dimen114
+\tagwidth@=\dimen115
+\totwidth@=\dimen116
+\lineht@=\dimen117
 \@envbody=\toks19
-\multlinegap=\skip45
-\multlinetaggap=\skip46
+\multlinegap=\skip44
+\multlinetaggap=\skip45
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
 (/usr/share/texmf-texlive/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen128
-\extrarowheight=\dimen129
+\col@sep=\dimen118
+\extrarowheight=\dimen119
 \NC@list=\toks21
-\extratabsurround=\skip47
-\backup@length=\skip48
+\extratabsurround=\skip46
+\backup@length=\skip47
 )
 (/usr/share/texmf-texlive/tex/latex/mdwtools/mdwmath.sty
 Package: mdwmath 1996/04/11 1.1 Nice mathematical things
@@ -205,103 +169,155 @@ Package: mdwtab 1998/04/28 1.9 Table typesetting with style
 \tab@columns=\count105
 \tab@preamble=\toks22
 \tab@shortline=\toks23
-\extrarowheight=\dimen130
-\tabextrasep=\dimen131
-\arrayextrasep=\dimen132
-\smarraycolsep=\dimen133
-\smarrayextrasep=\dimen134
-\tab@width=\dimen135
-\col@sep=\dimen136
-\tab@endheight=\dimen137
-\tab@leftskip=\skip49
-\tab@rightskip=\skip50
-\fn@notes=\box29
-\fn@width=\dimen138
+\extrarowheight=\dimen120
+\tabextrasep=\dimen121
+\arrayextrasep=\dimen122
+\smarraycolsep=\dimen123
+\smarrayextrasep=\dimen124
+\tab@width=\dimen125
+\col@sep=\dimen126
+\tab@endheight=\dimen127
+\tab@leftskip=\skip48
+\tab@rightskip=\skip49
+\fn@notes=\box28
+\fn@width=\dimen128
 )
 (/usr/share/texmf-texlive/tex/latex/eqparbox/eqparbox.sty
 Package: eqparbox 2004/08/02 v2.1 Create equal-widthed parboxes
-\eqp@tempdima=\skip51
-\eqp@tempdimb=\skip52
+\eqp@tempdima=\skip50
+\eqp@tempdimb=\skip51
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
-(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
-File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+*geometry auto-detecting driver*
+*geometry detected driver: dvips*
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 72.26999pt, 452.9679pt, 72.26999pt
+v-parts: 72.26999pt, 700.50687pt, 72.26999pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: dvips
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  452.9679pt
+\textheight 700.50687pt
+\oddsidemargin  0.0pt
+\evensidemargin 0.0pt
+\topmargin  -37.0pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 35.0pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 40.
+[1
+
+] (./report.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
 )
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 39.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 39.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 39.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 39.
-LaTeX Font Info:    Try loading font information for U+pzd on input line 39.
+\tf@toc=\write3
+\openout3 = `report.toc'.
 
-(/usr/share/texmf-texlive/tex/latex/psnfss/upzd.fd
-File: upzd.fd 2001/06/04 font definitions for U/pzd.
-)
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 42.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 47.
-LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <12> not available
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 47.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 49.
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
-
-Underfull \hbox (badness 3417) in paragraph at lines 70--71
-\OT1/ppl/m/n/10 Given the ob-ject cat-e-gories dis-cov-ered and vi-sual
- []
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
+ [1
 
 ]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 75.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 75.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 75.
- [2
+Underfull \hbox (badness 10000) in paragraph at lines 45--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--54
+
+ []
+
+[1] [1]
+Chapter 1.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+[1
+
+]
+Chapter 2.
+[2
+
+]
+Chapter 3.
+[3
+
+] [4
 
 ] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 2322 strings out of 493857
- 32552 string characters out of 1153305
- 92017 words of memory out of 3000000
- 5598 multiletter control sequences out of 15000+50000
- 40077 words of font info for 86 fonts, out of 3000000 for 9000
+ 1976 strings out of 493858
+ 24164 string characters out of 1153328
+ 83649 words of memory out of 3000000
+ 5259 multiletter control sequences out of 15000+50000
+ 9806 words of font info for 34 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 27i,5n,21p,1283b,225s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/s
-hare/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texliv
-e/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
-/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplri8a
-.pfb></usr/share/texmf-texlive/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on report.pdf (2 pages, 59946 bytes).
+ 27i,6n,21p,1696b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on report.dvi (8 pages, 9900 bytes).
+amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on report.pdf (8 pages, 74717 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
+ 49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
