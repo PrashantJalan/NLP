@@ -7,17 +7,18 @@
 \contentsline {chapter}{\numberline {3}Learning the language labels}{4}{chapter.3}
 \contentsline {section}{\numberline {3.1}Attention Model}{4}{section.3.1}
 \contentsline {section}{\numberline {3.2}Linguistic segmentation}{4}{section.3.2}
-\contentsline {section}{\numberline {3.3}Association Measure}{5}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Joint Probability}{5}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Conditional Probability}{5}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Mutual Information}{5}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Relative Frequency}{5}{subsection.3.3.4}
-\contentsline {chapter}{\numberline {4}Corpus Analysis}{6}{chapter.4}
-\contentsline {section}{\numberline {4.1}Most frequent words in Hindi}{6}{section.4.1}
-\contentsline {section}{\numberline {4.2}Top k-grams in Hindi}{7}{section.4.2}
-\contentsline {chapter}{\numberline {5}Results}{8}{chapter.5}
-\contentsline {section}{\numberline {5.1}Hindi}{8}{section.5.1}
-\contentsline {section}{\numberline {5.2}English}{8}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusion \& Future Work}{9}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusion}{9}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Work}{9}{section.6.2}
+\contentsline {section}{\numberline {3.3}Label Association}{5}{section.3.3}
+\contentsline {section}{\numberline {3.4}Association Measure}{6}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Conditional Probability}{6}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Mutual Information}{6}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Relative Frequency}{7}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Other adjustments}{7}{section.3.5}
+\contentsline {chapter}{\numberline {4}Corpus Analysis}{8}{chapter.4}
+\contentsline {section}{\numberline {4.1}Most frequent words in Hindi}{8}{section.4.1}
+\contentsline {section}{\numberline {4.2}Top k-grams in Hindi}{9}{section.4.2}
+\contentsline {chapter}{\numberline {5}Results}{10}{chapter.5}
+\contentsline {section}{\numberline {5.1}Hindi}{10}{section.5.1}
+\contentsline {section}{\numberline {5.2}English}{10}{section.5.2}
+\contentsline {chapter}{\numberline {6}Conclusion \& Future Work}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusion}{11}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{11}{section.6.2}

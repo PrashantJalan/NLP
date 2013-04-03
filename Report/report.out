@@ -7,11 +7,12 @@
 \BOOKMARK [0][-]{chapter.3}{Learning the language labels}{}
 \BOOKMARK [1][-]{section.3.1}{Attention Model}{chapter.3}
 \BOOKMARK [1][-]{section.3.2}{Linguistic segmentation}{chapter.3}
-\BOOKMARK [1][-]{section.3.3}{Association Measure}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.3.1}{Joint Probability}{section.3.3}
-\BOOKMARK [2][-]{subsection.3.3.2}{Conditional Probability}{section.3.3}
-\BOOKMARK [2][-]{subsection.3.3.3}{Mutual Information}{section.3.3}
-\BOOKMARK [2][-]{subsection.3.3.4}{Relative Frequency}{section.3.3}
+\BOOKMARK [1][-]{section.3.3}{Label Association}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{Association Measure}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.4.1}{Conditional Probability}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.2}{Mutual Information}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.3}{Relative Frequency}{section.3.4}
+\BOOKMARK [1][-]{section.3.5}{Other adjustments}{chapter.3}
 \BOOKMARK [0][-]{chapter.4}{Corpus Analysis}{}
 \BOOKMARK [1][-]{section.4.1}{Most frequent words in Hindi}{chapter.4}
 \BOOKMARK [1][-]{section.4.2}{Top k-grams in Hindi}{chapter.4}

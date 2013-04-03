@@ -106,7 +106,8 @@ Since, the audio speech recognition for Hindi is not yet very efficient and as o
 \end{figure}
 
 \chapter{Learning the language labels}
-This chapter describes the theoretical concepts behind the noun recognition.
+This chapter describes the theoretical concepts behind the noun recognition. We experiment with various kinds of linguistic units, different association measures and different datasets. Typically, we assume the linguistic units to be contiguous (k-grams) at word and syllabic-level. We also experiment with units of different lengths combined to form phrases at word and syllabic level. We propose a mechanism to learn the appropriate units of correct size based on fragment analysis and unit-independence conjecture.
+
 \section{Attention Model}
 We use an attention model to find the most salient part of the scene. Such a model tries to predict the part of the scene the human is most likely to attend to. The words used in the description are more likely to refer to objects that are in perceptual focus, i.e. we assume that linguistic focus follows perceptual focus.\\
 \\
@@ -126,14 +127,71 @@ In the FSM, \{C\}, \{V\}, \{M\}, \{O\}, \{P\}, \{S\}, \{H\}, \{D\} denotes the s
 \label{fig_FSM}
 \end{figure}
 
+\section{Label Association}
+For a label $l$, concept $c$, speaker $s$ and time $t$, we define following probabilities.\\
+\\
+Attention probability of the concept $c$ for the speaker $s$ at time $t$\\
+$$
+P(c|s,t) = \begin{cases} 1 & \mbox{if $c$ is attended by speaker $s$ at time $t$} \\ 0 & \mbox{otherwise}\end{cases}
+$$
+\\
+$$
+P(l|s,t) = \begin{cases} 1 & \mbox{if $l$ is uttered by speaker $s$ at time $t$} \\ 0 & \mbox{otherwise}\end{cases}
+$$
+\\
+We define the Joint probability of a label $l$ and an object category $c$ as\\
+$$
+J(l|s) = \frac{1}{T \ast |S|} \ast \sum_{t=1}^{T}\sum_{s \in S}P(c|s,t) \ast P(l|s,t) 
+$$
+\\
+Similarly, we define the concept probability of a concept $c$ as\\
+$$
+P(c) = \frac{1}{T \ast |S|} \ast \sum_{t=1}^{T}\sum_{s \in S}P(c|s,t)
+$$
+\\
+The label probability of a label $l$ is given as\\
+$$
+P(l) = \frac{f(l)}{\sum_{l}{f(l)}}
+$$
+\\
+where $f(l)$ is the frequency (number of occurrences) of label $l$ in the narrative corpus.
+
 
 \section{Association Measure}
+To find the maximally associated linguistic unit for a given visual category, we need an association measure which can rank the labels according to the degree of co-occurrence between the label and the visual category. A typical association measure should have following properties:\\
+\begin{itemize}
+\item It should give high association values if the label and the visual category co-occur frequently.
+\item It should penalize the labels which co-occur frequently with many categories whereas should prefer labels which co-occur frequently only with a particular category.
+\end{itemize}
+Various association measures we experimented with are described next.
 
-\subsection{Joint Probability}
 \subsection{Conditional Probability}
-\subsection{Mutual Information}
-\subsection{Relative Frequency}
+Conditional probability of a label $l$ given a concept $c$ is given as\\
+$$
+P (l|c) = J(l, c)/P (c)
+$$
+\\
+Conditional probability of a label given concept favours the concepts having rare occurrence but having sufficient co-occurrence with the label. However, it doesn’t consider the distribution of the joint probability of the label over all concepts and hence fails to capture the second property of association measure.
 
+\subsection{Mutual Information}
+Mutual information of a label $l$ and a concept $c$ is given as\\
+$$
+MI(l, c) = J(l, c) \ast log(\frac{J(l, c)}{P (c) \ast P (l)})
+$$
+\\
+Mutual information favours the rare concepts and rare labels having sufficient degree of co-occurrence.
+
+\subsection{Relative Frequency}
+Relative frequency of a label $l$ and a concept $c$ is given as\\
+$$
+P(c|l) = \frac{P(l|c) \ast P(c)}{P(l)} \propto \frac{P(l|c)}{P(l)} \propto \frac{\text{freq ($l$) when c is happening}}{\text{freq ($l$)}} = relative frequency
+$$
+\\
+Relative frequency is therefore a measure of the conditional probability that a concept $c$ has occured given that the label $l$ is uttered.
+
+\section{Other adjustments}
+
+We also experimented by making small changes to obtain better results. We wrote a \textit{shift\_frame} function which would shift the frame record of a concept by the specified amount of frames. This was incorporated to deal with the inadvertent time lag. We removed the k-grams having very less frequency (occurred only once) to minimise their negative impact on the result through a function called \textit{ignore\_freq}. We also wrote a function called \textit{morphology} which removed only specific word inflections, for instance, \textbf{bigger} was made \textbf{big}, {\dn nFl\?} to {\dn nFlA}, etc. Function \textit{merge\_common} merged the frequency of smaller k-grams with that of the bigger k-gram if both had the same frequency and if the smaller k-gram was a sub-string of the bigger k-gram.
 
 \chapter{Corpus Analysis}
 While learning the linguistic units, we did not consider the most common and frequent words used in English and Hindi. For English, we took the most commonly used words from a previously done analysis using British English Corpus, American English Corpus and recorded talks and speech\cite{}. For Hindi, we use Hindi unicode corpus, Center For Indian Language Technology, IIT Bombay\cite{}. We perform both syllabic and word analysis in the Hindi corpus to discover the most frequent words and top k-grams in Hindi. 
