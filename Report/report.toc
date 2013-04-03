@@ -18,7 +18,19 @@
 \contentsline {section}{\numberline {4.2}Top k-grams in Hindi}{9}{section.4.2}
 \contentsline {chapter}{\numberline {5}Results}{10}{chapter.5}
 \contentsline {section}{\numberline {5.1}Hindi}{10}{section.5.1}
-\contentsline {section}{\numberline {5.2}English}{10}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusion \& Future Work}{11}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusion}{11}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Work}{11}{section.6.2}
+\contentsline {subsection}{\numberline {5.1.1}Syllabic analysis}{10}{subsection.5.1.1}
+\contentsline {subsubsection}{For all the narrations}{10}{section*.2}
+\contentsline {subsubsection}{When the narrations elaborately contained the words {\dn lAl} and {\dn nFlA}}{10}{section*.3}
+\contentsline {subsubsection}{When the narrations elaborately contained the words {\dn CoVA} and {\dn bwA}}{11}{section*.4}
+\contentsline {subsection}{\numberline {5.1.2}Word level analysis}{11}{subsection.5.1.2}
+\contentsline {subsubsection}{For all the narrations}{11}{section*.5}
+\contentsline {subsubsection}{When the narrations elaborately contained the words {\dn lAl} and {\dn nFlA}}{11}{section*.6}
+\contentsline {subsubsection}{When the narrations elaborately contained the words {\dn CoVA} and {\dn bwA}}{11}{section*.7}
+\contentsline {section}{\numberline {5.2}English}{12}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Word level analysis}{12}{subsection.5.2.1}
+\contentsline {subsubsection}{For all the narrations}{12}{section*.8}
+\contentsline {subsubsection}{When the narrations elaborately contained the words \textbf {red} and \textbf {blue}}{12}{section*.9}
+\contentsline {subsubsection}{When the narrations elaborately contained the words \textbf {small} and \textbf {big}}{12}{section*.10}
+\contentsline {chapter}{\numberline {6}Conclusion \& Future Work}{13}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusion}{13}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{13}{section.6.2}

@@ -26,9 +26,6 @@
 % *** ALIGNMENT PACKAGES ***
 \usepackage{tabularx}
 \usepackage{array}
-\usepackage{mdwmath}
-\usepackage{mdwtab}
-\usepackage{eqparbox}
 
 \begin{document}
 \title{Syllable based noun recognition\\for grounded videos}
@@ -190,7 +187,7 @@ Relative frequency is therefore a measure of the conditional probability that a 
 
 \section{Other adjustments}
 
-We also experimented by making small changes to obtain better results. We wrote a \textit{shift\_frame} function which would shift the frame record of a concept by the specified amount of frames. This was incorporated to deal with the inadvertent time lag. We removed the k-grams having very less frequency (occurred only once) to minimise their negative impact on the result through a function called \textit{ignore\_freq}. We also wrote a function called \textit{morphology} which removed only specific word inflections, for instance, \textbf{bigger} was made \textbf{big}, {\dn nFl\?} to {\dn nFlA}, etc. Function \textit{merge\_common} merged the frequency of smaller k-grams with that of the bigger k-gram if both had the same frequency and if the smaller k-gram was a sub-string of the bigger k-gram.
+We also experimented by making small changes to obtain better results. We wrote a \textit{shift\_frame} function which would shift the frame record of a concept by the specified amount of frames. This was incorporated to deal with the inadvertent time lag. We removed the k-grams having very less frequency (occurred only once) to minimise their negative impact on the result through a function called \textit{ignore\_freq}. We also wrote a function called \textit{morphology} which removed only specific word inflections, for instance, \textbf{bigger} was made \textbf{big}, {\dn nFl\?} to {\dn nFlA}, etc. Function \textit{merge\_common} merged the frequency of smaller k-grams with that of the bigger k-gram if both had the same frequency and if the smaller k-gram was a sub-string of the bigger k-gram. We use the \textit{combine} function for calculating the relative measure, that is the value obtained when a particular concept is happening divided by when it is not happening. The relative measure obtained gives much better results.
 
 \chapter{Corpus Analysis}
 While learning the linguistic units, we did not consider the most common and frequent words used in English and Hindi. For English, we took the most commonly used words from a previously done analysis using British English Corpus, American English Corpus and recorded talks and speech\cite{eng-corpus}. For Hindi, we use Hindi unicode corpus, Center For Indian Language Technology, IIT Bombay\cite{hindi-corpus}. We perform both syllabic and word analysis in the Hindi corpus to discover the most frequent words and top k-grams in Hindi. Files with detailed data can be found at \cite{corpus-result}
@@ -231,8 +228,146 @@ The top 2,3,4,5,6 k-grams in Hindi are as follows:\\
 \end{tabularx}
 
 \chapter{Results}
+
+We have shown the top three linguistics labels that we get in all the different cases. We observe that mutual information and relative frequency both work well for Hindi and relative frequency works well for English. In all the cases the results shown are obtained after taking the relative measure, that is the value obtained when a particular concept is happening divided by when it is not happening. In syllabic analysis, the less frequent k-grams are removed. However, the less frequent words are not removed as the word database is relatively small. Morphology is used everywhere and we have excluded the common words in all the cases. For English narrations, the frames are shifted by 10. Concept 1 (c1) is out bigger/red triangle and concept 2 (c2) is our smaller/blue triangle.
+
 \section{Hindi}
+
+\subsection{Syllabic analysis}
+\vspace*{10px}
+\subsubsection{For all the narrations}
+\vspace*{10px}
+\begin{tabularx}{\textwidth}{ l | X | X | X }
+& Mutual Information & Conditional Probability & Relative Frequency\\
+\hline
+C1 & {\dn c\7{t}\7{B}\0j} - 679.415 & {\dn mr} - 24.257 & {\dn lAl} - 10.500\\
+& {\dn lAl} - 88.649 & {\dn \8{G}mr} - 24.257 & {\dn \8{G}m} - 8.999\\
+& {\dn lAE/} - 51.748 & {\dn CoVA} - 15.618 & {\dn CoVA} - 6.500\\
+\hline
+C2 & {\dn rh\?} - 244.986 & {\dn hr} - 23.509 & {\dn lAlE/\7{B}j} - 6.500\\
+& {\dn rh\?h\4{\qva}} - 222.007 & {\dn bAhr} - 23.509 & {\dn nFlA} - 5.749\\
+& {\dn vAlA} - 35.736 & {\dn ab} - 17.338 & {\dn E/\7{B}j} - 5.375\\
+\end{tabularx}
+
+\subsubsection{When the narrations elaborately contained the words {\dn lAl} and {\dn nFlA}}
+\vspace*{10px}
+\begin{tabularx}{\textwidth}{ l | X | X | X }
+& Mutual Information & Conditional Probability & Relative Frequency\\
+\hline
+C1 & {\dn lAl} - 108.572 & {\dn \8{G}m} - 18.980 & {\dn lAl} - 9.500\\
+& {\dn nFlAE/} - 28.986 & {\dn mr} - 17.831 & {\dn E/\7{B}j} - 6.000\\
+& {\dn nFlAE/\7{B}j} - 27.624 & {\dn \8{G}mr} - 17.831 & {\dn nFlAE/\7{B}j} - 4.500\\
+\hline
+C2 & {\dn nFlA} - 42.325 & {\dn rlAl} - 3.657 & {\dn nFlA} - 7.333\\
+& {\dn lAlE/} - 25.925 & {\dn lAlE/} - 3.528 & {\dn lAlE/\7{B}j} - 6.500\\
+& {\dn lAlE/\7{B}j} - 25.261 & {\dn lAlE/\7{B}j} - 3.528 & {\dn lAl} - 6.000\\
+\end{tabularx}
+
+\subsubsection{When the narrations elaborately contained the words {\dn CoVA} and {\dn bwA}}
+\vspace*{10px}
+\begin{tabularx}{\textwidth}{ l | X | X | X }
+& Mutual Information & Conditional Probability & Relative Frequency\\
+\hline
+C1  & {\dn lr} - 33.453 & {\dn CoVA} - 12.341 & {\dn CoVA} - 5.499\\
+& {\dn bwA} - 21.913 & {\dn koZ} - 8.762 & {\dn E/\7{B}j} - 3.999\\
+& {\dn bwAE/} - 17.863 & {\dn E/koZ} - 6.835 & {\dn rhAh\4} - 3.333\\
+\hline
+C2 & {\dn vAlA} - 157.907 & {\dn bAhr} - 13.884 & {\dn CoVA} - 7.500\\
+& {\dn dr} - 108.739 & {\dn ab} - 8.865 & {\dn E/\7{B}j} - 5.499\\
+& {\dn E/\7{B}j} - 44.785 & {\dn rh\?h\4{\qva}} - 5.183 & {\dn bwA} - 5.000\\
+\end{tabularx}
+
+\subsection{Word level analysis}
+\vspace*{10px}
+\subsubsection{For all the narrations}
+\vspace*{10px}
+\begin{tabularx}{\textwidth}{ l | X | X | X }
+& Mutual Information & Conditional Probability & Relative Frequency\\
+\hline
+C1 & {\dn rok} - 10.299 & {\dn c\7{t}\7{B}\0j} - 5.604 & {\dn \8{G}m} - 7.000\\
+& {\dn vAps} - 6.887 & {\dn \8{G}m} - 5.544 & {\dn lAl} - 6.499\\
+& {\dn bAhr} - 5.829 & {\dn bwA} - 4.881 & {\dn E/koZ} - 4.333\\
+\hline
+C2 & {\dn r\2g} - 25.877 & {\dn bAhr} - 17.463 & {\dn nFlA} - 11.000\\
+& {\dn nhF} - 2.308 & {\dn E/koZ} - 16.000 & {\dn CoVA} - 8.000\\
+& {\dn aBF} - 2.191 & {\dn vo} - 12.541 & {\dn E/\7{B}j} - 5.571\\
+\end{tabularx}
+
+\subsubsection{When the narrations elaborately contained the words {\dn lAl} and {\dn nFlA}}
+\vspace*{10px}
+\begin{tabularx}{\textwidth}{ l | X | X | X }
+& Mutual Information & Conditional Probability & Relative Frequency\\
+\hline
+C1 & {\dn aBF} - 2.341 & {\dn \8{G}m} - 4.474 & {\dn lAl} - 5.999\\
+& {\dn usn\?} - 1.922 & {\dn lAl} - 3.863 & {\dn \8{G}m} - 4.999\\
+& {\dn c\7{t}\7{B}\0j} - 1.427 & {\dn y\?} - 1.778 & {\dn E/\7{B}j} - 3.500\\
+\hline
+C2 & {\dn aBF} - 4.890 & {\dn lAl} - 7.676 & {\dn E/\7{B}j} - 13.5\\
+& {\dn b?s\?} - 2.908 & {\dn bAhr} - 6.981 & {\dn nFlA} - 10.0\\
+& {\dn r\2g} - 2.790 & {\dn E/\7{B}j} - 5.273 & {\dn a\2dr} - 2.5\\
+\end{tabularx}
+
+\subsubsection{When the narrations elaborately contained the words {\dn CoVA} and {\dn bwA}}
+\vspace*{10px}
+\begin{tabularx}{\textwidth}{ l | X | X | X }
+& Mutual Information & Conditional Probability & Relative Frequency\\
+\hline
+C1  & {\dn Dk\?l} - 11.605 & {\dn bwA} - 4.480 & {\dn E/\7{B}j} - 3.999\\
+& {\dn vAps} - 9.628 & {\dn E/koZ} - 2.454 & {\dn E/koZ} - 3.666\\
+& {\dn bAhr} - 2.576 & {\dn cAhtA} - 2.434 & {\dn bwA} - 3.5\\
+\hline
+C2 & {\dn nhF} - 2.348 & {\dn E/koZ} - 12.750 & {\dn CoVA} - 8.000\\
+& {\dn CoVA} - 0.965 & {\dn vo} - 7.670 & {\dn bwA} - 3.333\\
+& {\dn d\?K} - 0.946 & {\dn CoVA} - 2.782 & {\dn E/\7{B}j} - 2.4\\
+\end{tabularx}
+
+
 \section{English}
+
+\subsection{Word level analysis}
+\vspace*{10px}
+\subsubsection{For all the narrations}
+\vspace*{10px}
+\begin{tabularx}{\textwidth}{ l | X | X | X }
+& Mutual Information & Conditional Probability & Relative Frequency\\
+\hline
+C1 & around - 10.365 & rectangle - 4.702 & big - 11.000\\
+& trying - 9.218 & box - 3.173 & box - 10.000\\
+& move - 2.593 & object - 1.707 & object - 5.000\\
+\hline
+C2 & small - 3.339 & small - 3.244 & small - 7.000\\
+& big - 2.812 & blue - 2.709 & triangle - 5.000\\
+& red - 2.418 & big - 2.333 & blue - 4.000\\
+\end{tabularx}
+
+\subsubsection{When the narrations elaborately contained the words \textbf{red} and \textbf{blue}}
+\vspace*{10px}
+\begin{tabularx}{\textwidth}{ l | X | X | X }
+& Mutual Information & Conditional Probability & Relative Frequency\\
+\hline
+C1 & trying - 46.279 & triangle - 2.796 & triangle - 11.000\\
+& object - 9.652 & trying - 2.070 & red - 3.999\\
+& seems - 1.820 & blue - 1.643 & small - 3.000\\
+\hline
+C2 & red - 2.341 & blue - 4.290 & blue - 6.000\\
+& blue - -6.018 & red - 0.891 & small - 4.000\\
+& & basically - 0.000 & triangle - 3.000\\
+\end{tabularx}
+
+\subsubsection{When the narrations elaborately contained the words \textbf{small} and \textbf{big}}
+\vspace*{10px}
+\begin{tabularx}{\textwidth}{ l | X | X | X }
+& Mutual Information & Conditional Probability & Relative Frequency\\
+\hline
+C1  & move - 2.416 & rectangle - 2.869 & big - 10.000\\
+& triangle - 2.007 & box - 2.411 & box - 8.000\\
+& small - 1.874 & big - 1.628 & around - 3.000\\
+\hline
+C2 & small - 3.136 & small - 3.244 & small - 5.999\\
+& object - 3.089 & big - 2.333 & triangle - 5.000\\
+& big - 2.732 & box - 0.572 & big - 3.499\\
+\end{tabularx}
+
 
 \chapter{Conclusion \& Future Work}
 \section{Conclusion}

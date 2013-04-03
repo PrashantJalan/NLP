@@ -18,7 +18,10 @@
 \BOOKMARK [1][-]{section.4.2}{Top k-grams in Hindi}{chapter.4}
 \BOOKMARK [0][-]{chapter.5}{Results}{}
 \BOOKMARK [1][-]{section.5.1}{Hindi}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.1.1}{Syllabic analysis}{section.5.1}
+\BOOKMARK [2][-]{subsection.5.1.2}{Word level analysis}{section.5.1}
 \BOOKMARK [1][-]{section.5.2}{English}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.2.1}{Word level analysis}{section.5.2}
 \BOOKMARK [0][-]{chapter.6}{Conclusion \046 Future Work}{}
 \BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}
 \BOOKMARK [1][-]{section.6.2}{Future Work}{chapter.6}
