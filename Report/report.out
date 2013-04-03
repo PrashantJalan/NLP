@@ -1,0 +1,23 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}
+\BOOKMARK [1][-]{section.1.1}{Language learning framework}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{Resources exploited}{chapter.1}
+\BOOKMARK [0][-]{chapter.2}{Collecting the dataset}{}
+\BOOKMARK [1][-]{section.2.1}{Collecting Narrations}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Audio to text transcription}{chapter.2}
+\BOOKMARK [0][-]{chapter.3}{Learning the language labels}{}
+\BOOKMARK [1][-]{section.3.1}{Attention Model}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{Linguistic segmentation}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Association Measure}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{Joint Probability}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{Conditional Probability}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.3}{Mutual Information}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.4}{Relative Frequency}{section.3.3}
+\BOOKMARK [0][-]{chapter.4}{Corpus Analysis}{}
+\BOOKMARK [1][-]{section.4.1}{Most frequent words in Hindi}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Top k-grams in Hindi}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{Results}{}
+\BOOKMARK [1][-]{section.5.1}{Hindi}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{English}{chapter.5}
+\BOOKMARK [0][-]{chapter.6}{Conclusion \046 Future Work}{}
+\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{Future Work}{chapter.6}
