@@ -19,7 +19,6 @@
 \usepackage{devanagari}
 % *** CITATATION PACKAGE ***
 \usepackage{cite}
-% \cite{} output 
 % *** GRAPHICS RELATED PACKAGES ***
 \usepackage{graphicx}
 % *** MATH PACKAGES ***
@@ -47,7 +46,7 @@ I would like to thank Dr. Amitabha Mukerjee under whose supervision I did this w
 \\
 I am thankful to Mr. Diwakar Chauhan who was always there to help me understand the difficult concepts and motivate me throughout the project.\\
 \\
-I acknowledge the excellent word of Nikhil Joshi in 'unsupervised language learning for complex 3D videos'.\\
+I acknowledge the excellent word of Nikhil Joshi\cite{nikhil} in 'unsupervised language learning for complex 3D videos'.\\
 \\
 I owe to my parents and my sister for their moral support and encouragement.\\
 \\
@@ -59,17 +58,17 @@ Finally, I thank IIT Kanpur for giving me this platform to pursue my interests a
 
 \renewcommand{\abstractname}{Abstract}
 \begin{abstract}
-We aim to make the computers learn a new language without any previous knowledge about the language. In this work, we have used a semantic syllabic approach and also a word level analysis to acquire basic linguistic units particularly, noun based on the Langacker\cite{} theory of learning language. Based on a 2D video and co-occurring raw text, we demonstrate how this cognitively inspired model segments the world to obtain a meaning space, and combines words into hierarchical patterns for a linguistic pattern space. We try to recognize nouns in the English language and the Hindi language based on some narrations taken from different subjects using different association measures such as the mutual information, relative frequency and conditional probability.
+We aim to make the computers learn a new language without any previous knowledge about the language. In this work, we have used a semantic syllabic approach and also a word level analysis to acquire basic linguistic units particularly, noun based on the Langacker\cite{langacker} theory of learning language. Based on a 2D video and co-occurring raw text, we demonstrate how this cognitively inspired model segments the world to obtain a meaning space, and combines words into hierarchical patterns for a linguistic pattern space. We try to recognize nouns in the English language and the Hindi language based on some narrations taken from different subjects using different association measures such as the mutual information, relative frequency and conditional probability.
 \end{abstract}
 
 
 \chapter{Introduction}
 \section{Language learning framework}
-The problem of language acquisition has been of great interest to many disciplines including Linguistics, Psychology, Philosophy, Neurobiology, Cognitive science and Computer Science. From Panini\cite{} to Chomsky\cite{} to Tomasello, there have been many attempts to formalize the theory of language. The debate is mostly two-sided. Chomsky\cite{} argues for the innateness of language based on the argument (known as `poverty of stimulus') that the child acquiring language has access to only positive examples (grammatical sentences), and very little corrective feedback. Thus, the Chomskyan framework focuses on the syntax of a language and is largely sceptical about semantics. So, learning a language from his viewpoint is learning a `generative syntax' for that language. Langacker\cite{}, alternatively has given a central role to semantics in his language learning model. Langacker\cite{} considers grammar as conceptualization and formalizes it as a bipolar symbolic unit interconnecting the phonological pole (linguistic representation) and the semantic pole (conceptual representation). In the view of cognitive grammar, language is entrenched in the usage and linguistic representations get their meanings because of their usage with some conceptual entity.
+The problem of language acquisition has been of great interest to many disciplines including Linguistics, Psychology, Philosophy, Neurobiology, Cognitive science and Computer Science. From Panini\cite{panini} to Chomsky\cite{chomsky} to Tomasello, there have been many attempts to formalize the theory of language. The debate is mostly two-sided. Chomsky\cite{chomsky} argues for the innateness of language based on the argument (known as `poverty of stimulus') that the child acquiring language has access to only positive examples (grammatical sentences), and very little corrective feedback. Thus, the Chomskyan framework focuses on the syntax of a language and is largely sceptical about semantics. So, learning a language from his viewpoint is learning a `generative syntax' for that language. Langacker\cite{langacker}, alternatively has given a central role to semantics in his language learning model. Langacker\cite{langacker} considers grammar as conceptualization and formalizes it as a bipolar symbolic unit interconnecting the phonological pole (linguistic representation) and the semantic pole (conceptual representation). In the view of cognitive grammar, language is entrenched in the usage and linguistic representations get their meanings because of their usage with some conceptual entity.
 The idea is analogous to a child’s way of learning. When a child is born, he knows nothing about a language. He doesn’t know anything about the noun, verb, preposition or the syntax or the word boundaries. But as he continuously hears description, slowly after many instances of a particular object or an action been referred to by a particular word, the child begins to recognize the word and associate it with the object or action. 
 
 \section{Resources exploited}
-We used python as the programming language because of its ability to handle large datasets and execute complex algorithms with very simple commands. We used Windows Movie Maker to record narration for the video clips and export it without any change in the video properties such as the frame number, bit rate and frame size. We had also used the VideoPad Video Editor software to embed the audio clip (recorded using the Windows default sound recorder software) onto the video clip. We used Microsoft Word or Open Office to manually transcribe the audio into written Hindi text. To write in Hindi we also used the online editor available at \url{www.quillpad.in} 
+We used python as the programming language because of its ability to handle large datasets and execute complex algorithms with very simple commands. We used Windows Movie Maker to record narration for the video clips and export it without any change in the video properties such as the frame number, bit rate and frame size. We had also used the VideoPad Video Editor software to embed the audio clip (recorded using the Windows default sound recorder software) onto the video clip. We used Microsoft Word or Open Office to manually transcribe the audio into written Hindi text. To write in Hindi we also used the online editor available at \cite{quill}. 
 
 \chapter{Collecting the dataset}
 
@@ -194,7 +193,7 @@ Relative frequency is therefore a measure of the conditional probability that a 
 We also experimented by making small changes to obtain better results. We wrote a \textit{shift\_frame} function which would shift the frame record of a concept by the specified amount of frames. This was incorporated to deal with the inadvertent time lag. We removed the k-grams having very less frequency (occurred only once) to minimise their negative impact on the result through a function called \textit{ignore\_freq}. We also wrote a function called \textit{morphology} which removed only specific word inflections, for instance, \textbf{bigger} was made \textbf{big}, {\dn niile} to {\dn niilaa}, etc. Function \textit{merge\_common} merged the frequency of smaller k-grams with that of the bigger k-gram if both had the same frequency and if the smaller k-gram was a sub-string of the bigger k-gram.
 
 \chapter{Corpus Analysis}
-While learning the linguistic units, we did not consider the most common and frequent words used in English and Hindi. For English, we took the most commonly used words from a previously done analysis using British English Corpus, American English Corpus and recorded talks and speech\cite{}. For Hindi, we use Hindi unicode corpus, Center For Indian Language Technology, IIT Bombay\cite{}. We perform both syllabic and word analysis in the Hindi corpus to discover the most frequent words and top k-grams in Hindi. 
+While learning the linguistic units, we did not consider the most common and frequent words used in English and Hindi. For English, we took the most commonly used words from a previously done analysis using British English Corpus, American English Corpus and recorded talks and speech\cite{eng-corpus}. For Hindi, we use Hindi unicode corpus, Center For Indian Language Technology, IIT Bombay\cite{hindi-corpus}. We perform both syllabic and word analysis in the Hindi corpus to discover the most frequent words and top k-grams in Hindi. Files with detailed data can be found at \cite{corpus-result}
 
 \section{Most frequent words in Hindi}
 The most frequently used words in Hindi are as follows:\\
@@ -239,126 +238,33 @@ The top 2,3,4,5,6 k-grams in Hindi are as follows:\\
 \section{Conclusion}
 Given the object categories discovered and visual saliency of these objects over the time, we demonstrate the ability of our system to learn nouns like {\dn triBuja}, {\dn triko.na}, {\dn lAla}, {\dn nIlA}, {\dn baRA}, {\dn Co.tA} in Hindi and  triangle, red, blue, big, small in English. We confirm the success in learning words by analysing the strength of associations with increasing number of narrations. Discovering {\dn lAla} and {\dn nIlA} from narrations describing the triangles as {\dn lAla} and {\dn nIlA} and {\dn Co.tA} and {\dn baRA} from the narrations which describe the triangles as {\dn Co.tA} or {\dn baRA}, both in English and Hindi, confirms the success of our model. We argue that the consistent dominance of association strength of label with a visual category over the other labels is desirable and can be taken as a confirmation of the word learning. The success in learning appropriate labels even without knowing word-boundaries shows that the knowledge of word boundaries may not be a prerequisite for early word-learning. Getting the same results at a word level analysis illustrates the correctness of the association measures we have used. The results show that Hindi is a highly inflected language.
 \section{Future Work}
-We aim to extend our word to discover other linguistic units such as verbs, prepositions and finally, be able to learn a language with its syntactical knowledge. To enhance the results of noun discovering we wish to apply morphology to remove the word inflections. We hope to do a syllabic analysis for English, too. We also aim to use other association measures such as Dominance Weighted Joint Probability, which is proposed by Guha and is described in \cite{}. We also hope to get better results in English after collecting some more narrations.
+We aim to extend our word to discover other linguistic units such as verbs, prepositions and finally, be able to learn a language with its syntactical knowledge. To enhance the results of noun discovering we wish to apply morphology to remove the word inflections. We hope to do a syllabic analysis for English, too. We also aim to use other association measures such as Dominance Weighted Joint Probability, which is proposed by Guha and is described in \cite{guha}. We also hope to get better results in English after collecting some more narrations.
 
 \begin{thebibliography}{1}
-  
-\bibitem{}\url{http://www.world-english.org/english500}
 
-\bibitem{}\url{http://www.cfilt.iitb.ac.in}
+\bibitem{nikhil}Nikhil Sudhakar Joshi. A semantics-first approach for word learning using visuo-linguistic corpus. In M.Tech Thesis Report, Department of Computer Science and Engineering, IIT Kanpur. 2011.
 
-\bibitem{}\url{http://home.iitk.ac.in/~prasant/Corpus_files}
+\bibitem{guha}P Guha. Unsupervised concept acquisition from surveillance video. In PhD Thesis Report, Department of Computer Science and Engineering, IIT Kanpur. 2010.
+
+\bibitem{eng-corpus}\url{http://www.world-english.org/english500}
+
+\bibitem{hindi-corpus}\url{http://www.cfilt.iitb.ac.in}
+
+\bibitem{corpus-result}\url{http://home.iitk.ac.in/~prasant/Corpus_files}
+
+\bibitem{panini}Panini. \textit{Ashtadhyayi}. 400 BC.
+
+\bibitem{chomsky}N. Chomsky. Syntactic Structures. Mouton, The Hague, Netherlands, 1985.
+
+\bibitem{langacker}Ronald Langacker. Foundations of Cognitive Grammar. 1987.
+
+\bibitem{quill}\url{www.quillpad.in}
+
+\bibitem{dn}Anshuman Pandey. Devanagari for $TEX$. 31 December 2007. \url{ftp://ftp.dante.de/pub/tex/language/devanagari/velthuis/doc/generic/velthuis/manual.pdf}
+
+\bibitem{unicode}The Unicode Standard. Devanagari. \url{http://www.unicode.org/charts/PDF/U0900.pdf}
+
 
 \end{thebibliography}
 
 \end{document}
-
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the  draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation Results}
-%\label{fig_sim}
-%\end{figure}
-
-% Note that IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-
-
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command, the
-% \label for the overall figure must come after \caption.
-% \hfil must be used as a separator to get equal spacing.
-% The subfigure.sty package works much the same way, except \subfigure is
-% used instead of \subfloat.
-%
-%\begin{figure*}[!t]
-%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{subfigcase2}%
-%\label{fig_second_case}}}
-%\caption{Simulation results}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-
-
-% An example of a floating table. Note that, for IEEE style tables, the 
-% \caption command should come BEFORE the table. Table text will default to
-% \footnotesize as IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
-
-
-% Note that IEEE does not put floats in the very first column - or typically
-% anywhere on the first page for that matter. Also, in-text middle ("here")
-% positioning is not used. Most IEEE journals/conferences use top floats
-% exclusively. Note that, LaTeX2e, unlike IEEE journals/conferences, places
-% footnotes above bottom floats. This can be corrected via the \fnbelowfloat
-% command of the stfloats package.
-
-
-
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-%\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
-
-% references section
-
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
-%\bibliographystyle{IEEEtran}
-% argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
-%
-% <OR> manually copy in the resultant .bbl file
-% set second argument of \begin to the number of references
-% (used to reserve space for the reference number labels box)
-
-
-
