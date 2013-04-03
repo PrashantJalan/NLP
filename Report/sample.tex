@@ -1,4 +1,4 @@
-%% report.tex
+\def\DevnagVersion{2.15}%% report.tex
 %% V1.0
 %% 2013/03/30
 %% by Prashant Jalan
@@ -14,7 +14,7 @@
 \usepackage[left=1.0 in, right=1.0 in, top=1.0 in, bottom=1.0 in]{geometry}
 
 % *** HINDI PACKAGE ***
-\usepackage[utf8]{inputenc}
+\usepackage{devanagari}
 % *** CITATATION PACKAGE ***
 \usepackage{cite}
 % \cite{} output 
@@ -25,6 +25,7 @@
 % *** MATH PACKAGES ***
 \usepackage[cmex10]{amsmath}
 % *** ALIGNMENT PACKAGES ***
+\usepackage{tabularx}
 \usepackage{array}
 \usepackage{mdwmath}
 \usepackage{mdwtab}
@@ -64,7 +65,7 @@ We aim to make the computers learn a new language without any previous knowledge
 
 \chapter{Introduction}
 \section{Language learning framework}
-The problem of language acquisition has been of great interest to many disciplines including Linguistics, Psychology, Philosophy, Neurobiology, Cognitive science and Computer Science. From Panini\cite{} to Chomsky\cite{} to Tomasello, there have been many attempts to formalize the theory of language. The debate is mostly two-sided. Chomsky\cite{} argues for the innateness of language based on the argument (known as "poverty of stimulus") that the child acquiring language has access to only positive examples (grammatical sentences), and very little corrective feedback. Thus, the Chomskyan framework focuses on the syntax of a language and is largely sceptical about semantics. So, learning a language from his viewpoint is learning a "generative syntax" for that language. Langacker\cite{}, alternatively has given a central role to semantics in his language learning model. Langacker\cite{} considers grammar as conceptualization and formalizes it as a bipolar symbolic unit interconnecting the phonological pole (linguistic representation) and the semantic pole (conceptual representation). In the view of cognitive grammar, language is entrenched in the usage and linguistic representations get their meanings because of their usage with some conceptual entity.
+The problem of language acquisition has been of great interest to many disciplines including Linguistics, Psychology, Philosophy, Neurobiology, Cognitive science and Computer Science. From Panini\cite{} to Chomsky\cite{} to Tomasello, there have been many attempts to formalize the theory of language. The debate is mostly two-sided. Chomsky\cite{} argues for the innateness of language based on the argument (known as `poverty of stimulus') that the child acquiring language has access to only positive examples (grammatical sentences), and very little corrective feedback. Thus, the Chomskyan framework focuses on the syntax of a language and is largely sceptical about semantics. So, learning a language from his viewpoint is learning a `generative syntax' for that language. Langacker\cite{}, alternatively has given a central role to semantics in his language learning model. Langacker\cite{} considers grammar as conceptualization and formalizes it as a bipolar symbolic unit interconnecting the phonological pole (linguistic representation) and the semantic pole (conceptual representation). In the view of cognitive grammar, language is entrenched in the usage and linguistic representations get their meanings because of their usage with some conceptual entity.
 The idea is analogous to a child’s way of learning. When a child is born, he knows nothing about a language. He doesn’t know anything about the noun, verb, preposition or the syntax or the word boundaries. But as he continuously hears description, slowly after many instances of a particular object or an action been referred to by a particular word, the child begins to recognize the word and associate it with the object or action. 
 
 \section{Acquiring the linguistic units}
@@ -79,13 +80,42 @@ Subsubsection text here.
 While learning the linguistic units, we did not consider the most common and frequent words used in English and Hindi. For English, we took the most commonly used words from a previously done analysis using British English Corpus, American English Corpus and recorded talks and speech\cite{}. For Hindi, we use Hindi unicode corpus, Center For Indian Language Technology, IIT Bombay\cite{}. We perform both syllabic and word analysis in the Hindi corpus to discover the most frequent words and top k-grams in Hindi. 
 
 \section{Most frequent words in Hindi}
-
+The most frequently used words in Hindi are as follows:\\
+\\
+\begin{tabularx}{\textwidth}{l|X|l|X|l|X|l|X|l|X}
+1 & {\dn k\?} & 11 & {\dn BF} & 21 & {\dn is} & 31 & {\dn T\?} & 41 & {\dn jA}\\
+2 & {\dn h\4} & 12 & {\dn nhF{\qva}} & 22 & {\dn Ele} & 32 & {\dn TF} & 42 & {\dn rhA}\\
+3 & {\dn m\?{\qva}} & 13 & {\dn Ek} & 23 & {\dn kr} & 33 & {\dn n} & 43 & {\dn m\4{\qva}}\\
+4 & {\dn kF} & 14 & {\dn ek} & 24 & {\dn vh} & 34 & {\dn \7{k}C} & 44 & {\dn koI}\\
+5 & {\dn s\?} & 15 & {\dn hF} & 25 & {\dn EkyA} & 35 & {\dn jAtA} & 45 & {\dn v\?}\\
+6 & {\dn aOr} & 16 & {\dn ho} & 26 & {\dn gyA} & 36 & {\dn sAT} & 46 & {\dn \7{h}e}\\
+7 & {\dn kA} & 17 & {\dn to} & 27 & {\dn tTA} & 37 & {\dn yA} & 47 & {\dn !p}\\
+8 & {\dn ko} & 18 & {\dn yh} & 28 & {\dn krn\?} & 38 & {\dn tk} & 48 & {\dn EksF}\\
+9 & {\dn h\4{\qva}} & 19 & {\dn TA} & 29 & {\dn jo} & 39 & {\dn hotA} & 49 & {\dn \7{h}aA}\\
+10 & {\dn pr} & 20 & {\dn n\?} & 30 & {\dn apn\?} & 40 & {\dn EdyA} & 50 & {\dn us\?}\\
+\end{tabularx}
+              
+\newpage
 \section{Top k-grams in Hindi}
-
+The top 2,3,4,5,6 k-grams in Hindi are as follows:\\
+\\
+\begin{tabularx}{\textwidth}{ |X|X|X|X|X|X }
+\textbf{2-gram} & \textbf{3-gram} & \textbf{4-gram} & \textbf{5-gram} & \textbf{6-gram}\\
+\vspace{5px} & \vspace{5px} & \vspace{5px} & \vspace{5px} & \vspace{5px}\\
+{\dn kr} & {\dn k\?Ele} & {\dn n\?k\?Ele} & {\dn krn\?k\?Ele} & {\dn krn\?k\?Ele}\\
+{\dn aOr} & {\dn krn\?} & {\dn krn\?k\?} & {\dn rn\?k\?Ele} & {\dn yAjAsktAh\4}\\
+{\dn pr} & {\dn apn\?} & {\dn sktAh\4} & {\dn is\3FEwkAr} & {\dn k\?aADArpr}\\
+{\dn is} & {\dn n\?k\?Ele} & {\dn EkyAgyA} & {\dn k\?a\7{n}sAr} & {\dn kFaAv\35BwyktA}\\
+{\dn tAh\4} & {\dn jAtAh\4} & {\dn aAv\35Bwyk} & {\dn aAv\35BwyktA} & {\dn EkyAjAsktA}\\
+{\dn ek} & {\dn h\4aOr} & {\dn srkAr} & {\dn jAsktAh\4} & {\dn algAlg}\\
+{\dn nhF{\qva}} & {\dn yAgyA} & {\dn k\?kArZ} & {\dn EkyAgyAh\4} & {\dn u\381wr\3FEwd\?f}\\
+{\dn us} & {\dn h\4is} & {\dn rn\?k\?El} & {\dn yAjAsktA} & {\dn hon\?k\?kArZ}\\
+{\dn Ele} & {\dn tkr} & {\dn s\3FEwkAr} & {\dn EkyAjAtAh\4} & {\dn krowzpy\?}\\
+{\dn kAr} & {\dn usk\?} & {\dn yAjAtAh\4} & {\dn aADArpr} & {\dn tkrn\?k\?Ele}\\
+\end{tabularx}
 
 \chapter{Conclusion \& Future Work}
-$temp$
-Given the object categories discovered and visual saliency of these objects over the time, we demonstrate the ability of our system to learn nouns like in Hindi and red, blue, triangle, big, small in English. We confirm the success in learning words by analysing the strength of associations with increasing number of narrations. Discovering lal and neela from narrations describing the triangles as lal and neela and chota and bada from the narrations which describe the triangles as big or small, both in English and Hindi, confirms the success of our model. We argue that the consistent dominance of association strength of label with a visual category over the other labels is desirable and can be taken as a confirmation of the word learning. The success in learning appropriate labels even without knowing word-boundaries shows that the knowledge of word boundaries may not be a prerequisite for early word-learning. Getting the same results at a word level analysis illustrates the correctness of the association measures we have used.
+Given the object categories discovered and visual saliency of these objects over the time, we demonstrate the ability of our system to learn nouns like {\dn E/\7{B}j}, {\dn E/koZ}, {\dn lAl}, {\dn nFlA}, {\dn bwA}, {\dn CoVA} in Hindi and  triangle, red, blue, big, small in English. We confirm the success in learning words by analysing the strength of associations with increasing number of narrations. Discovering lal and neela from narrations describing the triangles as lal and neela and chota and bada from the narrations which describe the triangles as big or small, both in English and Hindi, confirms the success of our model. We argue that the consistent dominance of association strength of label with a visual category over the other labels is desirable and can be taken as a confirmation of the word learning. The success in learning appropriate labels even without knowing word-boundaries shows that the knowledge of word boundaries may not be a prerequisite for early word-learning. Getting the same results at a word level analysis illustrates the correctness of the association measures we have used.
 
 \begin{thebibliography}{1}
 
@@ -110,7 +140,7 @@ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 % of issues like this, it may be the safest practice to put all your
 % \label just after \caption rather than within \caption{}.
 %
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
+% Reminder: the  draftcls" or "draftclsnofoot", not "draft", class
 % option should be used if it is desired that the figures are to be
 % displayed while in draft mode.
 %
